@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <public type="anim" name="abc_grow_fade_in_from_bottom" id="0x7f010002" />
     <public type="anim" name="abc_popup_enter" id="0x7f010003" />
@@ -594,8 +594,7 @@
     <public type="attr" name="motionEffect_translationX" id="0x7f040225" />
     <public type="attr" name="motionEffect_translationY" id="0x7f040226" />
     <public type="attr" name="motionEffect_viewTransition" id="0x7f040227" />
-    <public type="attr" name="motionInterpolator" id="0x7f040228" />
-    <public type="attr" name="motionPathRotate" id="0x7f040229" />
+<public type="attr" name="motionPathRotate" id="0x7f040229" />
     <public type="attr" name="motionProgress" id="0x7f04022a" />
     <public type="attr" name="motionStagger" id="0x7f04022b" />
     <public type="attr" name="motionTarget" id="0x7f04022c" />
@@ -760,8 +759,7 @@
     <public type="attr" name="selectedItemOffsetStartTV" id="0x7f0402cf" />
     <public type="attr" name="setsTag" id="0x7f0402d0" />
     <public type="attr" name="shortcutMatchRequired" id="0x7f0402d1" />
-    <public type="attr" name="showAsAction" id="0x7f0402d2" />
-    <public type="attr" name="showPaths" id="0x7f0402d4" />
+<public type="attr" name="showPaths" id="0x7f0402d4" />
     <public type="attr" name="showText" id="0x7f0402d5" />
     <public type="attr" name="showTitle" id="0x7f0402d6" />
     <public type="attr" name="show_buffering" id="0x7f0402d7" />
