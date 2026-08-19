@@ -1,0 +1,37 @@
+package O0000O0oOo0OOOoOoO0oOOOoO000OOOOOooo0O0o;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: loaded from: classes.dex */
+public final class O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO {
+    public static final O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO DECRYPT_FINALIZED;
+    public static final O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO DECRYPT_INITIALIZED;
+    public static final O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO ENCRYPT_FINALIZED;
+    public static final O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO ENCRYPT_INITIALIZED;
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public static final /* synthetic */ O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO[] f848O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+    public static final O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO UNINITIALIZED;
+
+    static {
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO("UNINITIALIZED", 0);
+        UNINITIALIZED = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO2 = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO("ENCRYPT_INITIALIZED", 1);
+        ENCRYPT_INITIALIZED = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO2;
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO3 = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO("DECRYPT_INITIALIZED", 2);
+        DECRYPT_INITIALIZED = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO3;
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO4 = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO("ENCRYPT_FINALIZED", 3);
+        ENCRYPT_FINALIZED = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO4;
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO5 = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO("DECRYPT_FINALIZED", 4);
+        DECRYPT_FINALIZED = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO5;
+        f848O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = new O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO[]{o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO2, o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO3, o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO4, o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO5};
+    }
+
+    public static O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO valueOf(String str) {
+        return (O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) Enum.valueOf(O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.class, str);
+    }
+
+    public static O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO[] values() {
+        return (O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO[]) f848O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.clone();
+    }
+}

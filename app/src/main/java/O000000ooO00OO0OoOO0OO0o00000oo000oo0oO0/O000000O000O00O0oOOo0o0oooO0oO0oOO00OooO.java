@@ -1,0 +1,6 @@
+package O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO {
+    void O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(String str, String str2, O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00 o00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00);
+}

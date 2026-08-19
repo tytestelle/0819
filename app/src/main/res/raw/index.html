@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+        <meta name="wechat-enable-text-zoom-em" content="true">
+        <title>Ku9</title>
+        <meta name="layoutmode" content="standard">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="ui.css">
+        <link rel="stylesheet" type="text/css" href="prism_tomorrow.css">
+        <link rel="stylesheet" type="text/css" href="prism_line_numbers.css">
+        <script src="prism.js"></script>
+        <script src="prism_javascript.js"></script>
+        <script src="prism_numbers.js"></script>
+        <script src="code_highlight.js"></script>
+        <style>#sideList>div.list-item { padding: 0 0px; margin:4px auto; }</style>
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="page__bd" style="height: 100%;">
+                <div class="weui-tab">
+
+                    <div id="panel1" role="tabpanel" aria-labelledby="tab1" class="weui-tab__panel" style="display: none;background: #fff;">
+                        <div class="weui-form">
+                            <div class="weui-form__text-area">
+                                <h2 class="weui-form__title">使用说明</h2>
+                            </div>
+                            <div class="weui-form__control-area">
+                                <div class="weui-cells">
+                                    <div class="weui-panel weui-panel_access">
+                                        <div class="weui-panel__bd">
+                                            <!-- 关于app -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">关于APP</strong>
+                                                <div class="weui-media-box__desc">
+                                                    <div class="feature-grid">
+                                                        <div class="feature-item">✅ 支持多种视频格式</div>
+                                                        <div class="feature-item">✅ 支持图标显示</div>
+                                                        <div class="feature-item">✅ 支持EPG显示</div>
+                                                        <div class="feature-item">✅ 支持七天回看（需频道源支持）</div>
+                                                        <div class="feature-item">✅ 支持24小时时移（需频道源支持）</div>
+                                                        <div class="feature-item">✅ 支持自定义回看参数</div>
+                                                        <div class="feature-item">✅ EPG兼容DIYP，百川，超级TV及XML格式</div>
+                                                        <div class="feature-item">✅ 支持音频轨道、视频轨道和字幕轨道切换</div>
+                                                        <div class="feature-item">✅ 支持JS脚本功能</div>
+                                                        <div class="feature-item">✅ 支持PY脚本功能（仅PY版本）</div>
+                                                        <div class="feature-item">✅ 支持扫码远程输入</div>
+                                                        <div class="feature-item">✅ 支持频道搜索</div>
+                                                        <div class="feature-item">✅ 支持webview</div>
+                                                        <div class="feature-item">✅ 支持读取U盘数据</div>
+                                                        <div class="feature-item">✅ 支持二级分组</div>
+                                                        <div class="feature-item">✅ 支持列表订阅多选</div>
+                                                        <div class="feature-item">✅ 支持EPG订阅多选</div>
+                                                        <div class="feature-item">✅ 支持tvbox接口解析</div>
+                                                        <div class="feature-item">✅ 支持读取本地视频</div>
+                                                        <div class="feature-item">✅ 支持投屏及接收投屏</div>
+                                                    </div>
+                                                    <div class="warning-notice">
+                                                        <p class="notice-title">⚠️ 重要提示</p>
+                                                        <p>以上功能仅供测试使用，禁止传播及非法使用和商业用途，请安装后24小时内卸载并删除。酷9标准版及py版仅支持安卓5.0以上设备，lite版支持安卓4.3以上设备。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 目录说明 -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">目录说明</strong>
+                                                <div class="weui-media-box__desc">
+                                                    <div class="directory-container">
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 backup</p>
+                                                            <p class="folder-desc">储存数据备份文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 download</p>
+                                                            <p class="folder-desc">正在使用的网络列表下载文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 epgCache</p>
+                                                            <p class="folder-desc">epg缓存文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 js</p>
+                                                            <p class="folder-desc">js脚本文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 py</p>
+                                                            <p  class="folder-desc">py脚本文件(仅py版本支持)</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 localData</p>
+                                                            <p class="folder-desc">本地列表文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 logo</p>
+                                                            <p class="folder-desc">图标文件和配置图标及频道别名的epg_data.json文件</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 webviewJscode</p>
+                                                            <p class="folder-desc">播放webview时的全屏js代码</p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 configuration</p>
+                                                            <p class="folder-desc">存放配置app初始参数的Configuration.json文件 </p>
+                                                        </div>
+                                                        <div class="directory-section">
+                                                            <p class="folder-title">📁 videoFile</p>
+                                                            <p class="folder-desc">存放本地视频文件</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 操作说明 -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">操作说明</strong>
+                                                <div class="weui-media-box__desc">
+                                                    <div class="operation-section">
+                                                        <p class="section-title">APP界面操作</p>
+                                                        <ul class="operation-list">
+                                                            <li>触摸屏幕左或右边部分为弹出频道列表</li>
+                                                            <li>TV设备遥控按键OK或Enter键弹出频道列表</li>
+                                                            <li>触摸屏幕中间部分为弹出底部信息栏</li>
+                                                            <li>长按屏幕右部分为弹出设置列表，长按屏幕左部分为弹出搜索界面</li>
+                                                            <li>屏幕右上下滑动为切换频道，左部分上下滑动为音量调整</li>
+                                                            <li>屏幕左右滑动为切换线路（回看或视频片段时弹出进度条界面）</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">列表界面操作</p>
+                                                        <ul class="operation-list">
+                                                            <li>触摸屏长按单个节目添加收藏/取消收藏</li>
+                                                            <li>TV设备遥控按菜单键或长按OK按键收藏/取消收藏</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">订阅界面操作</p>
+                                                        <ul class="operation-list">
+                                                            <li>地址列表中，长按地址可进入编辑状态</li>
+                                                            <li>点击可切换地址，编辑状态下按删除按钮或确定按钮为完成编辑</li>
+                                                            <li>触摸二维码可跳转至远程页面</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">媒体信息操作</p>
+                                                        <ul class="operation-list">
+                                                            <li>长按对应信息可复制对应内容</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 配置说明 -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">配置说明</strong>
+                                                <div class="weui-media-box__desc">
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">解码方式</p>
+                                                        <ul class="operation-list">
+                                                            <li>支持系统、ijkplayer及exoplayer，不同设备切换合适的解码</li>
+                                                            <li>根据记忆解码开关，开启为单独设置，关闭为全局生效</li>
+                                                            <li>分类中可指定某个分组的解码方式（如：DE=0为系统解码），配置后设置中更换解码不会生效</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">EPG配置</p>
+                                                        <ul class="operation-list">
+                                                            <li>需选择解析方式，默认DIYP解析（推荐使用XmlTv格式EPG地址和解析）</li>
+                                                            <li>EPG地址需配置对应的解析方式，否则不能加载</li>
+                                                            <li>EPG订阅栏可配置EPG的时间偏移值以及缓存更新时间</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">EPG缓存</p>
+                                                        <ul class="operation-list">
+                                                            <li>EPG地址配置后选择对应的解析方式，加载后会自动缓存（可关闭）</li>
+                                                            <li>缓存自动清除6天前的，（非xml文件）明天后天及精彩节目epg不缓存</li>
+                                                            <li>EPG数据凌晨后启动会自动更新一次，根据缓存设置时间会进行二次更新</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="operation-section">
+                                                        <p class="section-title">读取图标顺序</p>
+                                                        <ul class="operation-list">
+                                                            <li>本地json配置文件 > 本地图标文件 > diyp格式epg中的logo> m3u列表中logo > assets文件配置（图标设置可修改m3u列表中logo优先于epg中logo）</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="config-section">
+                                                        <p class="config-title">epg_data.json文件配置</p>
+                                                        <div class="format-item">
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">epgid</span>
+                                                                <span class="config-desc">epg id名称</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">logo</span>
+                                                                <span class="config-desc">图标名称或路径</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">name</span>
+                                                                <span class="config-desc">频道名称</span>
+                                                            </div>
+                                                            <div class="code-block">{
+                                                                "epgs": [
+                                                                {
+                                                                "epgid": "能获取对应epg的id,比如：xx",
+                                                                "logo": "图标名称或者图标网络地址,比如：xx或者http://ku9/xx.png",
+                                                                "name": "想让这些频道获取xx的epg或者xx的图标,比如：xx1,xx2"
+                                                                },
+                                                                {
+                                                                "epgid": "能获取对应epg的id,比如：xx",
+                                                                "logo": "图标名称或者图标网络地址,比如：xx或者http://ku9/xx.png",
+                                                                "name": "想让这些频道获取xx的epg或者xx的图标,比如：xx1,xx2"
+                                                                }
+                                                                ]
+                                                                }</div>
+                                                            <p class="format-note">epg_data.json文件存放在logo文件夹中</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="config-section">
+                                                        <p class="config-title">本地源路径格式</p>
+                                                        <div class="path-format">
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式1(局域网)</p>
+                                                                <div class="code-block">http://127.0.0.1:9978/file/你的文件路径/文件名及文件后缀</div>
+                                                                <p class="format-note">端口号可能变动</p>
+                                                            </div>
+
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式2(本地)</p>
+                                                                <div class="code-block">file:///storage/emulated/0/你的文件路径/文件名及文件后缀</div>
+                                                                <p class="format-note">/storage/emulated/0设备不同可能有变</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="config-section">
+                                                        <p class="config-title">tvbox接口解析</p>
+                                                        <div class="path-format">
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">设置-列表配置-列表订阅，输入接口地址</p>
+                                                                <p>支持对tvbox多仓，多线路的接口进行解析，获取lives部分</p>
+                                                                <div class="code-block">// 1. 多仓接口
+                                                                    {
+                                                                    "storeHouse": [
+                                                                    {
+                                                                    "sourceName": "仓库1",
+                                                                    "sourceUrl": "https://xxxx.txt"
+                                                                    },
+                                                                    {
+                                                                    "sourceName": "仓库2",
+                                                                    "sourceUrl": "https://xxxx.json"
+                                                                    }
+                                                                    ]
+                                                                    }
+
+                                                                    // 2. 多线接口
+                                                                    {
+                                                                    "urls": [
+                                                                    {
+                                                                    "name": "线路1",
+                                                                    "url": "https://xxxx.txt"
+                                                                    },
+                                                                    {
+                                                                    "name": "线路2",
+                                                                    "url": "https://xxxx.json"
+                                                                    }
+                                                                    ]
+                                                                    }
+
+                                                                    // 3. 订阅接口
+                                                                    {
+                                                                    "lives": [
+                                                                    {
+                                                                    "name": "订阅接口1",
+                                                                    "url": "https://xxxx.txt"
+                                                                    },
+                                                                    {
+                                                                    "name": "订阅接口2",
+                                                                    "url": "https://xxxx.m3u"
+                                                                    }
+                                                                    ]
+                                                                    }</div>
+                                                                <p class="format-note">注意区分多仓，多线和订阅接口区别！多仓解析稍慢。可点击列表订阅的JSON按钮刷新解析结果</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="config-section">
+                                                        <p class="config-title">分组配置</p>
+                                                        <p>支持对分组单独设置解码方式、画面比例、headers、js路径等参数</p>
+                                                        <div class="format-item">
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">DE</span>
+                                                            <span class="config-desc">解码方式</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">SC</span>
+                                                            <span class="config-desc">画面比例</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">HEADERS</span>
+                                                            <span class="config-desc">请求头，json格式</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">JS</span>
+                                                            <span class="config-desc">Js路径</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">PY</span>
+                                                            <span class="config-desc">PY路径(仅py版本支持)</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">PB</span>
+                                                            <span class="config-desc">回放参数</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">HOST</span>
+                                                            <span class="config-desc">设置Host</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">PBO</span>
+                                                            <span class="config-desc">回放偏移值</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">IJKAD</span>
+                                                            <span class="config-desc">ijkPlayer的AnalyzeDuration值</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">MPVAD</span>
+                                                            <span class="config-desc">MPVPlayer的AnalyzeDuration值</span>
+                                                       </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">EXOBM</span>
+                                                            <span class="config-desc">exoPlayer的AnalyzeDuration值</span>
+                                                        </div>
+                                                        <div class="config-key-item">
+                                                            <span class="config-key">TSO</span>
+                                                            <span class="config-desc">时移结束时间增加值</span>
+                                                        </div>
+                                                        <div class="code-block">//解码方式和画面比例填写选项下标，比如DE=0表示选择系统解码，SC=0表示选择画面比例为默认
+                                                            //回放偏移值和时移结束时间增加值填写秒，比如PBO=600表示回放时时间增加偏移10分钟，PBO=-600表示偏移减少10分钟，TSO值设置方式同PBO
+
+                                                            //txt列表添加分组配置参数
+                                                            分组,#genre#,DE=1#SC=3#HEADERS={"User-Agent":"Player"}
+
+                                                            //m3u列表添加分组配置参数
+                                                            #EXTINF:-1 tvg-name="xxx" tvg-logo="xxx" category="大分组" group-title="分组",源1
+                                                            #EXTKU9OPT:DE=1#SC=3#HEADERS={"User-Agent":"Player"}
+                                                            http://xxx
+                                                        </div>
+                                                        <p class="format-note">配置多个用#号分隔，注意txt列表只有一个分组时（即只有一个 分组,#genre#），分组名和列表名称一致，配置才会生效</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="config-section">
+                                                        <p class="config-title">回看参数配置</p>
+                                                        <div class="format-item">
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">参数1</span>
+                                                                <span class="config-desc">(b)开始时间，(e)结束时间</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">参数2</span>
+                                                                <span class="config-desc">日期格式</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">参数3</span>
+                                                                <span class="config-desc">时区</span>
+                                                            </div>
+                                                            <div class="code-example-item">
+                                                                <div class="function-header-line">生成13位时间戳</div>
+                                                                <div class="code-block">//playseek=1769472000000-1769558400000
+                                                                    playseek=${(b)}-${(e)}</div>
+                                                            </div>
+                                                            <div class="code-example-item">
+                                                                <div class="function-header-line">生成10位时间戳</div>
+                                                                <div class="code-block">//playseek=1769472000-1769558400
+                                                                    playseek=${(b)10}-${(e)10}</div>
+                                                            </div>
+                                                            <div class="code-example-item">
+                                                                <div class="function-header-line">设置日期</div>
+                                                                <div class="code-block">//playseek=20260528000000-20260529000000
+                                                                    playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}</div>
+                                                            </div>
+                                                            <div class="code-example-item">
+                                                                <div class="function-header-line">设置时区</div>
+                                                                <div class="code-block">//playseek=20260528000000-20260529000000
+                                                                    playseek=${(b)yyyyMMddHHmmss|Asia/Shanghai}-${(e)yyyyMMddHHmmss|Asia/Shanghai}</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">TXT列表配置</div>
+                                                            <div class="code-block">分组1,#genre#,PB=playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}</div>
+                                                            <div class="function-header-line">M3U列表配置</div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">catchup</span>
+                                                                <span class="config-desc">append或default</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">catchup-source</span>
+                                                                <span class="config-desc">回看参数或回看地址</span>
+                                                            </div>
+                                                            <div class="code-block">//catchup为default时（直接使用catchup-source地址），最终回看地址：http://xxx0001?playseek=20251201080000-20251201090000
+                                                                #EXTINF:-1 catchup="default" catchup-source="http://xxx001?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",源1
+                                                                http://xxx
+
+                                                                //catchup为append时（地址与catchup-source地址拼接），最终回看地址：http://xxx&playseek=20251201080000-20251201090000
+                                                                #EXTINF:-1 catchup="append" catchup-source="playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",源1
+                                                                http://xxx
+
+                                                                //设置全局回看参数（首行位置）
+                                                                #EXTM3U catchup="append" catchup-source="playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- 脚本说明 -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">脚本说明</strong>
+                                                <div class="weui-media-box__desc">
+                                                    <div class="script-section">
+                                                        <p class="section-title">频道地址格式</p>
+                                                        <div class="format-example">
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式1</p>
+                                                                <div class="code-block">//js脚本
+                                                                    http://xx/ku9/js/xx.xx?id=xx
+
+                                                                //py脚本
+                                                                    http://xx/ku9/py/xx.xx?id=xx</div>
+                                                                <p class="format-note">字符/ku9/js/或/ku9/py/为识别格式，xx为任意字符</p>
+                                                            </div>
+
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式2（网络路径）</p>
+                                                                <div class="code-block">//js脚本
+                                                                    http://xx/xx/k-web/ku9/js/xx.xx?id=xx
+
+                                                                    //py脚本
+                                                                    http://xx/xx/k-web/ku9/py/xx.xx?id=xx</div>
+                                                                <p class="format-note">/k-web/前为任意网络路径</p>
+                                                            </div>
+
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式3（时移地址）</p>
+                                                                <div class="code-block">//js脚本
+                                                                    http://xx/xx/k-web/PLTV/ku9/js/xx.xx?id=xx
+
+                                                                    //py脚本
+                                                                    http://xx/xx/k-web/PLTV/ku9/py/xx.xx?id=xx</div>
+                                                                <p class="format-note">在/k-Web/之后添加可时移字符，如PLTV</p>
+                                                            </div>
+
+                                                            <div class="format-item">
+                                                                <p class="function-header-line">格式4（指定json文件,获取url标签，类似重定向地址）</p>
+                                                                <div class="code-block">http://xx/xx/xx.xx?id=xx&/ku9-json/</div>
+                                                                <p class="format-note">http://xx/xx/xx.xx为具体json路径地址</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="format-note">url同时包含/k-web/和/ku9/js/或/ku9/py/读取网络文件，只包含/ku9/js/或/ku9/py/读取本地文件；
+                                                        py仅py版本支持</p>
+                                                    </div>
+
+                                                    <div class="script-section">
+                                                        <p class="section-title">PY脚本说明</p>
+                                                        <div class="format-item">
+                                                            <div class="code-block">from base.parser import Parser
+                                                                import requests
+                                                                from typing import Tuple, Any, Dict, Union, Iterable
+
+                                                                class Parser(Parser): #必须继承
+
+                                                                # 必须，实现解析
+                                                                def parse(self, params: Dict[str, str]) -> Dict[str, str]:
+                                                                a = params.get("a")
+                                                                response = requests.get(a)
+
+                                                                return {
+                                                                url : self.address + "?a=1" # 当前脚本proxy的网络地址
+                                                                }
+
+
+                                                                # 非必须，若有后台运行的代码，注意及时关闭，换台时调用
+                                                                def stop(self):
+                                                                pass
+
+
+                                                                # 非必须，用于代理流，注意返回类型
+                                                                def proxy(self, url: str, headers: Dict[str, Any]) -> Tuple[Union[bytes, Iterable[bytes]], Dict[str, str]]:
+                                                                pass
+                                                            </div>
+                                                            <p class="format-note">仅py版支持</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="script-section">
+                                                        <p class="section-title">JS函数使用</p>
+                                                        <div class="format-item">
+                                                            <div class="example-desc">ku9.内置函数名(参数1,参数2..)</div>
+                                                            <div class="code-block">ku9.get( url );
+                                                                ku9.post( url );
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="script-section">
+                                                        <p class="section-title">JS调试模式</p>
+                                                        <div class="format-item">
+                                                        <div class="code-example-item">
+                                                            <div class="example-desc">同一局域网查看js返回结果：</div>
+                                                            <div class="code-block">//请求地址格式
+                                                                局域网地址/ku9/js/xxx.js
+                                                                //示例：http://192.168.0.1:9978/ku9/js/xxx.js</div>
+                                                        </div>
+                                                        <div class="code-example-item">
+                                                            <div class="example-desc">通过post请求，设置请求体（js文件内容），请求url（调试地址），可获取返回内容</div>
+                                                            <div class="code-block">//请求地址格式
+                                                                局域网地址/ku9/js/debug?id=xxx
+                                                                //示例：http://192.168.0.1:9978/ku9/js/debug?id=xxx</div>
+                                                        </div>
+                                                        <p class="format-note">app设置需开启远程调试</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="script-section">
+                                                        <p class="section-title">JS函数使用示例</p>
+
+                                                        <!-- 基础函数 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)" >
+                                                                <span class="function-title">基础函数</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+
+                                                                <!-- 函数入口 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">function main()</span>
+                                                                        <span class="function-description">主函数</span>
+                                                                    </div>
+                                                                    <div class="code-block">function main( item ) {
+                                                                        //执行逻辑
+                                                                        }</div>
+                                                                </div>
+
+                                                                <!-- 日志打印 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">console.log()</span>
+                                                                        <span class="function-description">日志打印</span>
+                                                                    </div>
+                                                                    <div class="code-block">console.log(message);</div>
+                                                                </div>
+
+                                                                <!-- 获取地址 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">获取地址</span>
+                                                                        <span class="function-description">快速获取URL地址</span>
+                                                                    </div>
+                                                                    <div class="code-block">const url = item.url;</div>
+                                                                </div>
+
+                                                                <!-- 获取参数 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.getQuery()</span>
+                                                                        <span class="function-description">获取URL查询参数</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">参数1</span>
+                                                                            <span class="config-desc">请求地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">参数2</span>
+                                                                            <span class="config-desc">要获取的参数（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">var id = ku9.getQuery(url, "id");
+                                                                        var id = item.id; // 快速方式</div>
+                                                                </div>
+
+                                                                <!-- 设置缓存 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.setCache()</span>
+                                                                        <span class="function-description">设置缓存</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">key</span>
+                                                                        <span class="config-desc">缓存时定义的key（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">data</span>
+                                                                        <span class="config-desc">缓存内容（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">time</span>
+                                                                        <span class="config-desc">缓存时效（Number）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">返回类型</span>
+                                                                        <span class="config-desc">无返回类型</span>
+                                                                    </div>
+
+                                                                    <div class="code-block">//缓存时效单位毫秒，0为永久有效，如：时效为1分钟，需传入60000
+                                                                        ku9.setCache( key , data , time )</div>
+                                                                </div>
+
+                                                                <!-- 获取缓存 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.getCache</span>
+                                                                        <span class="function-description">获取缓存</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">key</span>
+                                                                        <span class="config-desc">获取指定key的缓存（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">返回类型</span>
+                                                                        <span class="config-desc">String</span>
+                                                                    </div>
+                                                                    <div class="code-block">//过期或者值不存在返回null
+                                                                        var getCache =ku9.getCache( key )</div>
+                                                                </div>
+
+                                                                <!-- 网址解析 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.uri()</span>
+                                                                        <span class="function-description">解析网址结构</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">url</span>
+                                                                        <span class="config-desc">要解析的地址（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">返回类型</span>
+                                                                        <span class="config-desc">Object</span>
+                                                                    </div>
+
+                                                                    <div class="code-block">
+                                                                        var uri = ku9.uri( url );
+
+                                                                        //获取协议类型 返回String
+                                                                        var Scheme = uri.Scheme;
+
+                                                                        //获取域名或IP地址 返回String
+                                                                        var Host = uri.Host;
+
+                                                                        //获取连接的端口号 返回Number
+                                                                        var Port = uri.Port;
+
+                                                                        //获取路径部分，不包含名称及后缀部分 返回String
+                                                                        var Path= uri.Path;
+
+                                                                        //查询字符串部分，以 ? 开头，通常包含键值对，用于传递参数。 返回String
+                                                                        var Query = uri.Query;
+
+                                                                        //获取片段标识符，以 # 开头，通常用于指向页面的特定部分或元素。 返回String
+                                                                        var Fragment = uri.Fragment;
+
+                                                                        //获取完整的路径，包含名称及后缀部分 返回String
+                                                                        var FullPath = uri.FullPath;
+
+                                                                        //获取用户信息部分，username:password
+                                                                        var UserInfo = uri.UserInfo;
+
+                                                                        //解析url查询参数，生成键值对，返回json格式，如http://123/c.m3u8?id=1&c=k，返回json格式{“c”：“k”}
+                                                                        var Params = uri.Params;</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- 网络请求函数 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)">
+                                                                <span class="function-title">网络请求函数</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+                                                                <!-- request请求 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.request()</span>
+                                                                        <span class="function-description">网络请求</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">url</span>
+                                                                            <span class="config-desc">请求地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">method</span>
+                                                                            <span class="config-desc">GET或POST（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">headers</span>
+                                                                            <span class="config-desc">请求头对象（Object）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">body</span>
+                                                                            <span class="config-desc">请求体内容（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">redirect</span>
+                                                                            <span class="config-desc">是否重定向（Boolean）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">Object</span>
+                                                                        </div>
+                                                                    <div class="code-block">let res = ku9.request( url, method , headers, body , redirect);
+
+                                                                        //示例
+                                                                        let res = ku9.request( url, "GET" , { 'User-Agent': 'okhttp/3.12.11' }, "***" , false);
+                                                                        let res = ku9.request( url, "POST" , { 'User-Agent': 'okhttp/3.12.11' }, "***" );
+                                                                        let res = ku9.request( url, "POST" , { 'User-Agent': 'okhttp/3.12.11' });
+                                                                        let res = ku9.request( url, "POST" );
+                                                                        let res = ku9.request( url );
+                                                                        var furl = res.furl; // 重定向地址
+                                                                        var code = res.code; // 状态码
+                                                                        var headers = res.headers; // 响应头
+                                                                        var body = res.body; // 响应体</div>
+                                                                    <p class="format-note">url必填参数，其余可选，type默认为GET，重定向默认为true（需要获取重定向后的地址，填false）</p>
+                                                                </div>
+
+                                                                <!-- get请求 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.get()</span>
+                                                                        <span class="function-description">GET请求</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">url</span>
+                                                                            <span class="config-desc">请求地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">headers</span>
+                                                                            <span class="config-desc">请求头对象（json）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var res = ku9.get( url , headers );
+
+                                                                        //示例
+                                                                        var res = ku9.get( url , { 'User-Agent': 'okhttp/3.12.11' } );
+                                                                        var res = ku9.get( url , null );</div>
+                                                                </div>
+
+                                                                <!-- post请求 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.post()</span>
+                                                                        <span class="function-description">POST请求</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">url</span>
+                                                                            <span class="config-desc">请求地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">headers</span>
+                                                                            <span class="config-desc">请求头对象（json）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">body</span>
+                                                                            <span class="config-desc">请求体内容（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var res = ku9.post( url , headers , body );
+
+                                                                        //示例
+                                                                        var res = ku9.post( url , { 'User-Agent': 'okhttp/3.12.11' } , "***" );
+                                                                        var res = ku9.post( url , null , "***" );</div>
+                                                                </div>
+
+                                                                <!-- 获取头部信息 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.getHeaders()</span>
+                                                                        <span class="function-description">获取头部信息</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">url</span>
+                                                                            <span class="config-desc">请求地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">headers</span>
+                                                                            <span class="config-desc">请求头对象（json）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">redirect</span>
+                                                                            <span class="config-desc">是否重定向（Boolean）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">method</span>
+                                                                            <span class="config-desc">请求方法（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">body</span>
+                                                                            <span class="config-desc">请求体内容（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">let res = ku9.getHeaders( url, headers , redirect, method, body )
+
+                                                                        //示例
+                                                                        let res = ku9.getHeaders( url, { 'User-Agent': 'okhttp/3.12.11' } , false, "POST", "***" )
+                                                                        let res = ku9.getHeaders( url,{ 'User-Agent': 'okhttp/3.12.11' } , true,  "GET" )
+                                                                        let res = ku9.getHeaders( url, { 'User-Agent': 'okhttp/3.12.11' } , false )
+                                                                        let res = ku9.getHeaders( url, { 'User-Agent': 'okhttp/3.12.11' } )
+                                                                        let res = ku9.getHeaders( url)</div>
+                                                                    <p class="format-note">url必填参数，其余可选，type默认为GET，重定向默认为true（需要获取重定向后的地址，填false）</p>
+                                                                </div>
+
+                                                                <!-- websocket -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.websocket()</span>
+                                                                        <span class="function-description">实时连接</span>
+                                                                    </div>
+
+                                                                    <!-- 创建连接对象 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 创建连接对象</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">url</span>
+                                                                            <span class="config-desc">地址（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">headers</span>
+                                                                            <span class="config-desc">请求头（Object）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">连接名称（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        //url连接为ws://xxx格式
+                                                                        let wsconnect = ws.connect(url, headers, name);</div>
+                                                                    </div>
+
+                                                                    <!-- 获取已有连接 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 获取已有连接对象</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">连接名称（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.get(name);</div>
+                                                                    </div>
+
+                                                                    <!-- 判断连接是否存在 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 判断已有连接</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">连接名称（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">Boolean</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let haswsname = ws.has(name);</div>
+                                                                    </div>
+
+                                                                    <!-- 发送消息 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 发送消息</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">mes</span>
+                                                                            <span class="config-desc">消息内容（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.send(mes);</div>
+                                                                    </div>
+
+                                                                    <!-- 发送二进制消息 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 发送二进制消息</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">mes</span>
+                                                                            <span class="config-desc">二进制数据（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">hex</span>
+                                                                            <span class="config-desc">转为Hex，必须为true（Boolean）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.send(mes, true);</div>
+                                                                    </div>
+
+                                                                    <!-- 关闭连接 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 关闭连接</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">code</span>
+                                                                            <span class="config-desc">状态码（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">reason</span>
+                                                                            <span class="config-desc">关闭原因（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.close(1000, reason);</div>
+                                                                    </div>
+
+                                                                    <!-- 周期任务 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 周期任务</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">连接名称（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">message</span>
+                                                                            <span class="config-desc">任务消息（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">time</span>
+                                                                            <span class="config-desc">执行周期，单位毫秒（Number）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.task(name, message, time);</div>
+                                                                    </div>
+
+                                                                    <!-- 二进制周期任务 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 二进制周期任务</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">连接名称（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">message</span>
+                                                                            <span class="config-desc">任务消息（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">time</span>
+                                                                            <span class="config-desc">执行周期，单位毫秒（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">hex</span>
+                                                                            <span class="config-desc">消息转Hex，必须为true（Boolean）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.task(name, message, time, true);</div>
+                                                                    </div>
+
+                                                                    <!-- 取消任务 -->
+                                                                    <div class="script-section">
+                                                                        <div class="example-desc">※ 取消任务</div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">name</span>
+                                                                            <span class="config-desc">任务名称（String）</span>
+                                                                        </div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+                                                                        wsconnect.removetask(name);</div>
+                                                                    </div>
+
+                                                                    <!-- 其他方法 -->
+                                                                        <div class="example-desc">※ 其他方法</div>
+                                                                    <div class="code-block">let ws = ku9.websocket();
+                                                                        let wsconnect = ws.connect(url, headers, name);
+
+                                                                        //周期发送的消息
+                                                                        wsconnect.message();
+
+                                                                        //任务状态码
+                                                                        wsconnect.status();
+
+                                                                        //任务日志
+                                                                        wsconnect.log();</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- 加密解密函数 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)">
+                                                                <span class="function-title">加密解密函数</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+                                                                <!-- opensslEncrypt -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.opensslEncrypt()</span>
+                                                                        <span class="function-description">AES加密</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">加密数据（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">enType</span>
+                                                                            <span class="config-desc">加密类型（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">key</span>
+                                                                            <span class="config-desc">加密秘钥（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputType</span>
+                                                                            <span class="config-desc">输出数据类型：0为Base64字符串，1为HEX字符串，默认0（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">iv</span>
+                                                                            <span class="config-desc">加密向量（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var enc = ku9.opensslEncrypt( data, enType, key , outputType, iv );
+
+                                                                        //示例
+                                                                        var enc = ku9.opensslEncrypt(data, "AES-256-CBC", "ilyB29ZdruuQjC45JhBBR7o2Z8WJ26Vg" , 0, "JUMxvVMmszqUTeKn" );
+                                                                        var enc = ku9.opensslEncrypt(data, "AES-256-CBC", "ilyB29ZdruuQjC45JhBBR7o2Z8WJ26Vg" , 0 );</div>
+                                                                </div>
+
+                                                                <!-- opensslDecrypt -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.opensslDecrypt()</span>
+                                                                        <span class="function-description">AES解密</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">解密数据（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">deType</span>
+                                                                            <span class="config-desc">解密类型（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">key</span>
+                                                                            <span class="config-desc">解密秘钥（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputType</span>
+                                                                            <span class="config-desc">输入数据类型：0为Base64字符串，1为HEX字符串，默认0（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">iv</span>
+                                                                            <span class="config-desc">解密向量（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var dec = ku9.opensslDecrypt( data, deType, key , inputType, iv );
+
+                                                                        //示例
+                                                                        var dec = ku9.opensslDecrypt( data, "AES-256-CBC", "ilyB29ZdruuQjC45JhBBR7o2Z8WJ26Vg", 1, "JUMxvVMmszqUTeKn" );
+                                                                        var dec = ku9.opensslDecrypt( data, "AES-256-CBC", "ilyB29ZdruuQjC45JhBBR7o2Z8WJ26Vg" , 1 );</div>
+                                                                </div>
+
+                                                                <!-- rc4解密 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.rc4Decrypt()</span>
+                                                                        <span class="function-description">RC4解密</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">解密内容（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">key</span>
+                                                                            <span class="config-desc">密钥（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputFormat</span>
+                                                                            <span class="config-desc">输入格式：0为String，1为Hex（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputFormat</span>
+                                                                            <span class="config-desc">输出格式：0为String，1为Hex（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">charset</span>
+                                                                            <span class="config-desc">字符集（默认UTF-8）（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var dec = ku9.rc4Decrypt( data, key, inputFormat , outputFormat , charset );
+
+                                                                        //示例
+                                                                        var dec = ku9.rc4Decrypt( data, key, 0 , 1 , "UTF-8" );
+                                                                        var dec = ku9.rc4Decrypt( data, key, 0 , 1 );</div>
+                                                                </div>
+
+                                                                <!-- rc4加密 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.rc4Encrypt()</span>
+                                                                        <span class="function-description">RC4加密</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">要加密内容（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">key</span>
+                                                                            <span class="config-desc">密钥（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputFormat</span>
+                                                                            <span class="config-desc">输入格式：0为String，1为Hex（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputFormat</span>
+                                                                            <span class="config-desc">输出格式：0为String，1为Hex（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">charset</span>
+                                                                            <span class="config-desc">字符集（默认UTF-8）（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+
+                                                                    <div class="code-block">var enc = ku9.rc4Encrypt( data, key, inputFormat , outputFormat , charset );
+
+                                                                        //示例
+                                                                        var enc = ku9.rc4Encrypt( data, key, 0 , 1 , "GBK" );
+                                                                        var enc = ku9.rc4Encrypt( data, key, 0 , 1 );</div>
+                                                                </div>
+
+                                                                <!-- 哈希加密函数 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">哈希加密函数</span>
+                                                                        <span class="function-description">多种哈希算法</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">需要加密的字符串（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var sha1 = ku9.sha1( data );</div>
+                                                                    <div class="code-block">var sha256 = ku9.sha256( data );</div>
+                                                                    <div class="code-block">var sha512 = ku9.sha512( data );</div>
+                                                                    <div class="code-block">var md5 = ku9.md5( data );</div>
+                                                                </div>
+
+                                                                <!-- 3DES加密 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.encrypt3DES()</span>
+                                                                        <span class="function-description">3DES加密</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">data</span>
+                                                                        <span class="config-desc">加密内容（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">key</span>
+                                                                        <span class="config-desc">密钥（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">inputFormat</span>
+                                                                        <span class="config-desc">输入格式：0为String，1为Hex（Number）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">outputFormat</span>
+                                                                        <span class="config-desc">输出格式：0为String，1为Hex（Number）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">charset</span>
+                                                                        <span class="config-desc">字符集（默认UTF-8）（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">返回类型</span>
+                                                                        <span class="config-desc">String</span>
+                                                                    </div>
+
+                                                                    <div class="code-block">var enc = ku9.encrypt3DES( data, key, inputFormat , outputFormat , charset );
+
+                                                                        //示例
+                                                                        var enc = ku9.encrypt3DES( data, key, 0 , 1 , "GBK" );
+                                                                        var enc = ku9.encrypt3DES( data, key, 0 , 1 );</div>
+                                                                </div>
+
+                                                                <!-- 3DES解密 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.decrypt3DES()</span>
+                                                                        <span class="function-description">3DES解密</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">data</span>
+                                                                        <span class="config-desc">解密内容（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">key</span>
+                                                                        <span class="config-desc">密钥（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">inputFormat</span>
+                                                                        <span class="config-desc">输入格式：0为String，1为Hex（Number）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">outputFormat</span>
+                                                                        <span class="config-desc">输出格式：0为String，1为Hex（Number）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">charset</span>
+                                                                        <span class="config-desc">字符集（默认UTF-8）（String）</span>
+                                                                    </div>
+                                                                    <div class="config-key-item">
+                                                                        <span class="config-key">返回类型</span>
+                                                                        <span class="config-desc">String</span>
+                                                                    </div>
+
+                                                                    <div class="code-block">var enc = ku9.decrypt3DES( data, key, inputFormat , outputFormat , charset );
+
+                                                                        //示例
+                                                                        var enc = ku9.decrypt3DES( data, key, 0 , 1 , "GBK" );
+                                                                        var enc = ku9.decrypt3DES( data, key, 0 , 1 );</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- 编码解码函数 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)">
+                                                                <span class="function-title">编码解码函数</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+                                                                <!-- Base64编码 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.encodeBase64()</span>
+                                                                        <span class="function-description">Base64编码</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">需要编码的字符串（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var encodeBase64 = ku9.encodeBase64(data);</div>
+                                                                </div>
+
+                                                                <!-- Base64解码 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.decodeBase64()</span>
+                                                                        <span class="function-description">Base64解码</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">需要解码的字符串（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    <div class="code-block">var decodeBase64 = ku9.decodeBase64(data);</div>
+                                                                </div>
+
+                                                                <!-- 判断函数 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">判断函数</span>
+                                                                        <span class="function-description">数据类型判断</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">data</span>
+                                                                            <span class="config-desc">需要判断的字符串（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">Boolean</span>
+                                                                        </div>
+                                                                    <div class="code-block">//是否为b64编码
+                                                                        var isBase64 = ku9.isBase64(url);</div>
+                                                                    <div class="code-block">//是否为json对象
+                                                                        var isJsonObject = ku9.isJsonObject(url);</div>
+                                                                    <div class="code-block">//是否为json组
+                                                                        var isJsonArray = ku9.isJsonArray(url);</div>
+                                                                </div>
+
+                                                                <!-- 加密库引用 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">加密库引用 </span>
+                                                                        <span class="function-description">地址加密</span>
+                                                                    </div>
+                                                                    <div class="code-block">//加密库引用示例
+                                                                        const CryptoJS = require( "crypto" );
+                                                                        const jsencrypt = require( "jsencrypt" );
+                                                                        let base64String = "" ; //url Base64编码
+                                                                        let url = CryptoJS.enc.Base64.parse(base64String).toString( CryptoJS.enc.Utf8 );
+                                                                        const response = ku9.request( url );</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- 时间处理函数 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)">
+                                                                <span class="function-title">时间处理函数</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+                                                                <!-- 日期转时间戳 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.toTimestamp()</span>
+                                                                        <span class="function-description">日期转时间戳</span>
+                                                                    </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">dateStr</span>
+                                                                            <span class="config-desc">输入日期（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputFormat</span>
+                                                                            <span class="config-desc">输入日期格式（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">timezone</span>
+                                                                            <span class="config-desc">设置时区（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">Number</span>
+                                                                        </div>
+                                                                    <div class="code-block">var time = ku9.toTimestamp( dateStr , inputFormat , timezone );
+
+                                                                        //示例
+                                                                        var time = ku9.toTimestamp( "2024-10-23" , "yyyy-MM-dd" , "Asia/Shanghai" );
+                                                                        var time = ku9.toTimestamp( "2024-10-23" , "yyyy-MM-dd"  );</div>
+                                                                </div>
+
+                                                                <!-- 时间戳转日期 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.toDate()</span>
+                                                                        <span class="function-description">时间戳转日期</span>
+                                                                    </div>
+                                                                    <div class="format-item">
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">timestamp</span>
+                                                                            <span class="config-desc">13位时间戳（毫秒）（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputFormat</span>
+                                                                            <span class="config-desc">输出日期格式（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">timezone</span>
+                                                                            <span class="config-desc">设置时区（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="code-block">var time = ku9.toDate( timestamp , outputFormat , timezone );
+
+                                                                        //示例
+                                                                        var time = ku9.toDate( 1698019200000 , "yyyy-MM-dd" , "Asia/Shanghai" );
+                                                                        var time = ku9.toDate( 1698019200000 , "yyyy-MM-dd" );</div>
+                                                                </div>
+
+                                                                <!-- 日期格式转换 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">ku9.formatDateTime()</span>
+                                                                        <span class="function-description">日期格式转换</span>
+                                                                    </div>
+
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">dateStr</span>
+                                                                            <span class="config-desc">输入日期字（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputFormat</span>
+                                                                            <span class="config-desc">输入日期格式（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputFormat</span>
+                                                                            <span class="config-desc">输出日期格式（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">daysOffset</span>
+                                                                            <span class="config-desc">加减天数（Number）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">inputTimezone</span>
+                                                                            <span class="config-desc">设置输入时区（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">outputTimezone</span>
+                                                                            <span class="config-desc">设置输出时区（String）</span>
+                                                                        </div>
+                                                                        <div class="config-key-item">
+                                                                            <span class="config-key">返回类型</span>
+                                                                            <span class="config-desc">String</span>
+                                                                        </div>
+
+                                                                    <div class="code-block">var formatDateTime = ku9.formatDateTime( dateStr , inputFormat ,  outputFormat , daysOffset , inputTimezone , outputTimezone );
+
+                                                                        //示例
+                                                                        var formatDateTime = ku9.formatDateTime( "2024-10-23 21:23:00" , "yyyy-MM-dd HH:mm:ss" ,  "yyyy-MM-dd" , 1 , "Asia/Shanghai" , "Asia/Shanghai" );
+                                                                        var formatDateTime = ku9.formatDateTime( "2024-10-23 21:23:00" , "yyyy-MM-dd HH:mm:ss" ,  "yyyy-MM-dd" , 1 , "Asia/Shanghai" );
+                                                                        var formatDateTime = ku9.formatDateTime( "2024-10-23 21:23:00" , "yyyy-MM-dd HH:mm:ss" ,  "yyyy-MM-dd" , 0 );
+                                                                        var formatDateTime = ku9.formatDateTime( "2024-10-23 21:23:00" , "yyyy-MM-dd HH:mm:ss" ,  "yyyy-MM-dd" );</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- 返回类型示例 -->
+                                                        <div class="function-group" style="word-wrap:break-word;">
+                                                            <div class="function-header" onclick="toggleFunction(this)">
+                                                                <span class="function-title">返回类型示例</span>
+                                                                <span class="function-toggle">▶</span>
+                                                            </div>
+                                                            <div class="function-content">
+                                                                <!-- 返回播放地址 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址</span>
+                                                                    </div>
+                                                                    <div class="code-block">return { url: url };</div>
+                                                                </div>
+
+                                                                <!-- 返回播放地址设置解码 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址设置解码方式</span>
+                                                                    </div>
+                                                                    <div class="code-block">//返回解码方式为0 系统解码
+                                                                        return { url: url, player: 0 };</div>
+                                                                </div>
+
+                                                                <!-- 返回播放地址设置画面比例 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址设置画面比例</span>
+                                                                    </div>
+                                                                    <div class="code-block">//设置画面比例为3 填充
+                                                                        return { url: url, scale: 3 };</div>
+                                                                </div>
+
+                                                                <!-- 返回播放地址设置Ijk AnalyzeDuration -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址设置AnalyzeDuration</span>
+                                                                    </div>
+                                                                    <div class="code-block">//设置Analyzeduration值为2000000
+                                                                        return { url: url, ijkad: 2000000 };</div>
+                                                                </div>
+
+                                                                <!-- 返回播放地址带headers -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址带headers</span>
+                                                                    </div>
+                                                                    <div class="code-block">return { url: url, headers: { 'User-Agent': 'okhttp/3.12.11' } };</div>
+                                                                </div>
+
+                                                                <!-- 返回播放地址设置host -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回播放地址设置host</span>
+                                                                    </div>
+                                                                    <div class="code-block">return { url: url, host: "127.0.0.1" };
+                                                                        return { url: url, host: {"example.com" : "127.0.0.1" , "example.cn" : "127.0.0.2"}};</div>
+                                                                </div>
+
+                                                                <!-- 返回m3u8切片 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">返回m3u8切片</span>
+                                                                        <span class="function-description">返回m3u8格式内容</span>
+                                                                    </div>
+                                                                    <div class="code-block">let content = "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:10\n#EXT-X-MEDIA-SEQUENCE:" + seq + "\n";
+                                                                        for (var i = 0; i < 3; i++) {
+                                                                        content += "#EXTINF:10,\n";
+                                                                        content += "http://123456789/" + id + i + ".ts\n";
+                                                                        }
+                                                                        return { m3u8: content };</div>
+                                                                </div>
+
+                                                                <!-- 通过webview播放 -->
+                                                                <div class="format-item">
+                                                                    <div class="function-header-line">
+                                                                        <span class="function-name">通过webview播放</span>
+                                                                        <span class="function-description">WebView播放方式</span>
+                                                                    </div>
+                                                                    <div class="code-block">//jscode为播放网页时的模拟操作，比如让视频全屏
+                                                                        return { webview: url, jscode: jscode, headers: headers };
+                                                                        return { webview: url, jscode: jscode };
+                                                                        return { webview: url };</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- 其他说明 -->
+                                            <div role="option" class="weui-media-box weui-media-box_text" style="word-wrap:break-word;">
+                                                <strong class="weui-media-box__title" onclick="toggleContent(this)">其他说明</strong>
+                                                <div class="weui-media-box__desc">
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">webview播放</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">播放格式</div>
+                                                            <div class="code-block">//webview后面为网页地址
+                                                                webview://http://xxx
+                                                                //设置浏览模式；pc://或mobile://为浏览头标识手机端或电脑端
+                                                                webview://pc://http://xxx
+                                                            </div>
+                                                            <div class="function-header-line">webview_jscode.js文件</div>
+                                                            <div class="code-block">// WebView JS注入代码
+                                                                (function () {
+                                                                // 操作逻辑略.....
+                                                                video.play();
+
+                                                                // 设置画面比例，确保切换源时为选择的画面比例
+                                                                setscale(ku9.getscale());
+
+                                                                // 画面比例控制，app通过画面比例设置，切换scaletype值切换不同比例，注：function setscale(scaletype)为全局函数
+                                                                function setscale(scaletype) {
+                                                                switch (scaletype) {
+                                                                // 默认
+                                                                case 0:
+                                                                // 执行代码
+                                                                break;
+
+                                                                // 16:9
+                                                                case 1:
+                                                                // 执行代码
+                                                                break;
+
+                                                                // 4:3
+                                                                case 2:
+                                                                // 执行代码
+                                                                break;
+
+                                                                // 填充
+                                                                case 3:
+                                                                // 执行代码
+                                                                break;
+
+                                                                // 原始
+                                                                case 4:
+                                                                // 执行代码
+                                                                break;
+
+                                                                // 裁剪
+                                                                case 5:
+                                                                // 执行代码
+                                                                break;
+                                                                }
+                                                                }
+
+                                                                // 指定视频时长（duration>0时，播放视频时app界面左右滑动弹出seekbar，单位秒）
+                                                                ku9.setduration(duration);
+
+                                                                // 指定视频进度（播放视频时跳转指定时长）
+                                                                ku9.setposition(position);
+
+                                                                // 视频暂停（app界面左右滑动弹出seekbar后，按暂停按钮执行此方法让视频暂停）
+                                                                function pause() {
+                                                                // 执行代码
+                                                                }
+
+                                                                // 视频播放（app界面左右滑动弹出seekbar后，按播放按钮执行此方法让视频播放）
+                                                                function play() {
+                                                                // 执行代码
+                                                                }
+
+                                                                // 拖动视频进度时（app界面左右滑动弹出seekbar后，移动seekbar执行此方法让视频跳转至position位置播放，单位秒）
+                                                                function setposition(position) {
+                                                                // 执行代码
+                                                                }
+
+                                                                // 视频倍速（app界面左右滑动弹出seekbar后，实现点击倍速按钮切换视频播放速度，长按恢复倍速功能）
+                                                                function setspeed(float) {
+                                                                // 执行代码（接收float类型的倍速值，设置视频倍速，如：video.playbackRate = float）
+                                                                }
+                                                                })();</div>
+                                                            <p class="format-note">webview_jscode.js存放在webviewJscode文件夹中，用来模拟全屏操作</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">二级分组</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">TXT列表</div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">#group#</span>
+                                                                <span class="config-desc">一级分组</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">#genre#</span>
+                                                                <span class="config-desc">二级分组</span>
+                                                            </div>
+                                                        <div class="code-block">//大分组"娱乐"包含两个小分组
+                                                            娱乐,#group#
+
+                                                            影视,#genre#
+                                                            源1:http://xxx
+                                                            源2:http://xxx
+
+                                                            音乐,#genre#
+                                                            源1:http://xxx
+                                                            源2:http://xxx
+
+                                                            //大分组"其他"包含两个小分组
+                                                            其他,#group#
+
+                                                            教育,#genre#
+                                                            源1:http://xxx
+                                                            源2:http://xxx
+
+                                                            学习,#genre#
+                                                            源1:http://xxx
+                                                            源2:http://xxx
+
+                                                            //指定某个二级分组加密，如设置音乐分组密码为123
+                                                            音乐_123,#genre#
+                                                        </div>
+                                                            <div class="function-header-line">M3U列表</div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">category</span>
+                                                                <span class="config-desc">一级分组</span>
+                                                            </div>
+                                                            <div class="config-key-item">
+                                                                <span class="config-key">group-title</span>
+                                                                <span class="config-desc">二级分组</span>
+                                                            </div>
+                                                            <div class="code-block">//大分组"娱乐"包含两个小分组
+                                                                #EXTINF:-1 tvg-name="xxx" tvg-logo="xxx" category="娱乐" group-title="影视",源1
+                                                                http://xxx
+                                                                #EXTINF:-1 tvg-name="xxx" tvg-logo="xxx" category="娱乐" group-title="音乐",源1
+                                                                http://xxx
+
+                                                                //大分组"其他"包含两个小分组
+                                                                #EXTINF:-1 tvg-name="xxx" tvg-logo="xxx" category="其他" group-title="教育",源1
+                                                                http://xxx
+                                                                #EXTINF:-1 tvg-name="xxx" tvg-logo="xxx" category="其他" group-title="学习",源1
+                                                                http://xxx
+
+                                                                //指定某个二级分组加密，如设置音乐分组密码为123
+                                                                group-title="音乐_123"</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">X5内核</p>
+                                                        <p>内核包x5.tbs.apk放入酷9目录，通过设置-其他设置-浏览内核安装，或通过Tbs选项安装</p>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">host配置</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">直接配置</div>
+                                                        <div class="code-block">分组1,#genre#,HOST=127.0.0.1</div>
+                                                            <div class="function-header-line">json键值对配置</div>
+                                                        <div class="code-block">分组1,#genre#,HOST={"example.com" : "127.0.0.1" , "example.cn" : "127.0.0.2"}</div>
+                                                            <p class="format-note">也可在js脚本中通过返回播放地址时指定host，仅EXO解码和IJK解码生效，源域名为ip时无效</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">headers对源单独配置</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">ku9-json格式地址</div>
+                                                            <div class="code-block">//不带headers参数的地址
+                                                                http://xxx;
+
+                                                                //设置headrs参数的地址
+                                                                ku9-json://{"url":"http://xxx","headers":{"User-Agent" : "okhttp"}}</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">订阅地址配置</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">订阅地址配置headers</div>
+                                                            <div class="code-block">//b64decode表示请求后的结果是否需要b64解码，false为不需要，true为需要
+                                                                //format表示格式，这里填normal
+
+                                                                //需要设置headers，输入json格式
+                                                                {"url":"http://xxx","headers":{"User-Agent":"Player"},"format":"normal","b64decode":"false"};
+
+                                                                //不需要设置headers，输入正常格式
+                                                                http://xxx
+
+
+                                                                //EPG订阅及JSON解析
+
+                                                                //需要设置headers，输入json格式
+                                                                {"url":"http://xxx","headers":{"User-Agent":"Player"}};
+
+                                                                //不需要设置headers，输入正常格式
+                                                                http://xxx
+
+                                                            </div>
+                                                            <div class="function-header-line">XtreamCodes</div>
+                                                            <div class="code-block">//format表示格式，这里填xtream
+                                                                //b64decode表示请求后的结果是否需要b64解码，false为不需要，true为需要
+                                                                //user表示账号用户名
+                                                                //pass表示账号密码
+
+                                                                //输入json格式
+                                                                {"url":"http://xxx","user":"test","pass":"123","headers":{"User-Agent":"Player"},"format":"xtream","b64decode":"false"};</div>
+                                                            <div class="function-header-line">Url Scheme认证</div>
+                                                            <div class="code-block">//Url Scheme认证需要json格式
+
+                                                                //format表示格式，这里填scheme
+                                                                //b64decode表示请求后的结果是否需要b64解码，false为不需要，true为需要
+                                                                //user表示账号用户名
+                                                                //pass表示账号密码
+
+                                                                //Url Scheme格式：http://用户名:密码@服务器地址/路径
+                                                                //Url Scheme示例：http://admin:123456@pan.example.com/files/
+                                                                //订阅地址栏需要提取用户名admin，密码123456和路径http://pan.example.com/files/分别写入json格式中
+
+                                                                //输入json格式
+                                                                {"url":"http://pan.example.com/files/","user":"admin","pass":"123456","headers":{"User-Agent":"Player"},"format":"scheme","b64decode":"false"};</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">对源单独设置解码方式、画面比例、host、headers、Ijk及Exo AnalyzeDuration</p>
+                                                        <div class="format-item">
+                                                            <div class="function-header-line">结合js脚本使用</div>
+                                                            <div class="code-block">function main(item) {
+
+                                                                //以PLTV作为示例，添加PLTV让播放器识别为可回看，不同源返回回看格式不同，这里通过播放器返回的playseek可以自定义最终的回看格式
+                                                                //源格式示例：源1,http://PLTV/ku9/js/**.js?liveUrl=http://xxx0001&backUrl=rtsp://xxx0002
+
+                                                                let url = item.url;
+
+                                                                //获取直播链接 http://xxx0001
+                                                                const liveUrl = ku9.getQuery( url, "liveUrl" );
+
+                                                                //获取取回看链接 rtsp://xxx0002
+                                                                const backUrl = ku9.getQuery( url, "backUrl" );
+
+                                                                //获取PLTV源回看时间（yyyyMMddHHmmss格式时间段）
+                                                                const playSeek = ku9.getQuery( url, "playseek" );
+
+                                                                if (!playSeek) {
+                                                                //设置live时的解码方式、画面比例、exo bufferForPlaybackMs值、headers
+                                                                return { url: liveUrl, player: 1, scale: 0 , exobufms: 2500 , headers: { 'User-Agent': 'okhttp/3.12.11' } };
+                                                                } else {
+                                                                //设置back时的解码方式、画面比例、ijk AnalyzeDuration值、host
+                                                                let finalUrl = backUrl + "?playseek=" + playSeek; //需要定义的回看格式
+                                                                return { url: finalUrl, player: 3, scale: 2 , ijkad: 2000000 , host: "127.0.0.1" };
+                                                                }
+                                                                }</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="other-section">
+                                                        <p class="section-title">app在线升级</p>
+                                                        <div class="format-item">
+                                                            <div class="example-desc">需要搭配update.json文件，文件如下：</div>
+                                                            <div class="code-block">{
+                                                                "Update": {
+                                                                "#1": "是否更新；true为开启，false为关闭，(versionCode大于客户端并且值为true是提示更新必须条件)",
+                                                                "hasUpdate": true,
+                                                                "#2": "通过判断客户端APK里的versionCode值提示是否升级，设置值＞客户端值则提示升级",
+                                                                "versionCode": 1,
+                                                                "#3": "升级版本等信息",
+                                                                "apkSize": "版本：1.1beta    apk大小：35MB",
+                                                                "#4": "升级内容；\n为展示内容分行",
+                                                                "updateLog": "#内容1。\n#内容2。\n#内容x。",
+                                                                "#5": "升级时下载APK的网络路径",
+                                                                "apkUrl": "http://app/ku9.apk"
+                                                                }
+                                                                }</div>
+                                                            <p class="format-note">使用方式：update.json文件放置服务器，提取文件地址，配置在本地配置文件Configuration.json的updateUrl中</p>
+                                                            <p class="format-note">versionCode值：apk文件AndroidManifest.xml中的versionCode值</p>
+                                                            <p class="format-note">酷9默认versionCode为17，update.json文件中的versionCode为1，所以默认直接使用不会提示升级</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="panel2" role="tabpanel" aria-labelledby="tab2" class="weui-tab__panel" style="display: none;background: #fff;">
+                        <div class="weui-form" style="min-height: 0;">
+                            <div class="weui-form__text-area">
+                                <h2 class="weui-form__title">订阅配置</h2>
+                            </div>
+                            <div class="weui-form__control-area" style="margin-bottom: 0px !important;">
+                                <div class="weui-cells__group weui-cells__group_form">
+                                    <div class="weui-cells">
+                                        <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                            <div class="weui-cell__bd weui-flex">
+                                                <input id="diy_input_name" class="weui-input weui-cell__control weui-cell__control_flex" type="text" autocomplete="off" value="" placeholder="1. 输入名称（可选）" />
+                                                <button onclick="newName(); return false;" class="weui-cell__control weui-btn weui-btn_default weui-vcode-btn">确定</button>
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                            <div class="weui-cell__bd weui-flex">
+                                                <input id="diy_input_url" class="weui-input weui-cell__control weui-cell__control_flex" type="text" autocomplete="off" value="" placeholder="2. 输入配置地址" />
+                                                <button onclick="newUrl(); return false;" class="weui-cell__control weui-btn weui-btn_default weui-vcode-btn">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel3" role="tabpanel" aria-labelledby="tab3" class="weui-tab__panel" style="display: none;background: #fff;">
+                        <div class="weui-form" style="padding-top: 50px; min-height: 0;">
+                            <div class="weui-form__text-area">
+                                <h2 class="weui-form__title">本地文件</h2>
+                            </div>
+                            <input type="file" id="file_uploader" style="display:none;" onchange="uploadTip()" multiple />
+                            <div class="weui-form__control-area" style="text-align: center;margin-bottom: 10px !important;">
+                                <div class="button-sp-area" style="margin-top: 10px;">
+                                    <a href="javascript:void(0)" role="button" class="weui-btn weui-btn_mini weui-btn_default weui-wa-hotarea" href="javascript:void(0)" onclick="uploadFile()">上传文件</a>&nbsp;
+                                    <a href="javascript:void(0)" role="button" class="weui-btn weui-btn_mini weui-btn_default weui-wa-hotarea" href="javascript:void(0)" onclick="newFolder()">新建文件夹</a>&nbsp;
+                                    <a id="delCurFolder" href="javascript:void(0)" role="button" class="weui-btn weui-btn_mini weui-btn_warn weui-wa-hotarea" href="javascript:void(0)" onclick="delFolder()" style="display: none;">删除当前文件夹</a>
+                                </div>
+                            </div>
+                            <div class="weui-cells" id="file_list">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel4" role="tabpanel" aria-labelledby="tab4" class="weui-tab__panel" style="display: none; background: #f5f5f5; height: 100vh;">
+                        <!-- 标题栏 -->
+                        <div style="display: flex; align-items: center; background: #e8e8e8; padding: 8px 12px; gap: 8px;">
+                            <!-- 菜单按钮 -->
+                            <button id="menuBtn" style="width: 30px; height: 30px; background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                                <svg t="1740475944160" class="weui-tabbar__icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15903" width="160" height="160">
+                                    <path d="M382.3 165.6h-165c-47.5 0-86 38.4-86 86v165c0 47.5 38.4 86 86 86h165c47.5 0 86.5-38.4 86-86v-165c0-47.6-38.5-86-86-86z m43.3 251c0 11.2-4.3 21.9-12.3 29.9-8 8.5-19.2 12.8-31 12.8h-165c-24 0-43.2-19.2-43.2-43.2V251c0-24 19.2-43.2 43.2-43.2h165v0.5c24 0 43.2 19.2 43.2 43.2v165.1zM382.3 557.5h-165c-47.5 0-86 38.4-86 86v165c0 47.5 38.4 86 86 86h165c47.5 0 86.5-38.4 86-86v-165c0-47.6-38.5-86-86-86z m43.3 251c0 11.2-4.3 21.9-12.3 29.9-8 8.5-19.2 12.8-31 12.8h-165c-24 0-43.2-19.2-43.2-43.2V643.5c0-24 19.2-43.2 43.2-43.2h165c24 0 43.2 19.2 43.2 43.2v165zM871.4 273.5L755 157.1c-16-16-37.9-25.1-60.9-25.1s-44.8 9.1-60.9 25.1L516.9 273.5c-33.6 33.6-33.6 88.1 0 121.7l116.4 116.4c16 16 37.9 25.1 60.9 25.1s44.8-8.5 60.9-25.1l116.4-116.4c33.5-33.6 33.5-88.1-0.1-121.7zM841 364.8L724.6 481.2c-7.5 8-18.2 12.3-30.4 12.3-11.7 0-22.4-4.8-30.4-12.8L547.3 364.2c-8-8-12.8-19.2-12.8-30.4 0-11.7 4.3-22.4 12.8-30.4L663.7 187c8-7.5 19.2-12.3 30.4-12.3 11.7 0 22.4 4.8 30.4 12.8L841 303.9c8 8 12.8 19.2 12.8 30.4 0 11.8-4.3 22.5-12.8 30.5zM776.4 557.5h-165c-47.5 0-86 38.4-86 86v165c0 47.5 38.4 86 86 86h165c47.5 0 86.5-38.4 86-86v-165c-0.1-47.6-38.5-86-86-86z m43.2 251c0 11.2-4.3 21.9-12.3 29.9-8 8.5-19.2 12.8-31 12.8h-165c-24 0-43.2-19.2-43.2-43.2V643.5c0-24 19.2-43.2 43.2-43.2h165c24 0 43.2 19.2 43.2 43.2v165z" p-id="15904">
+                                    </path>
+                                </svg>
+                            </button>
+                            <i>
+                            </i>
+                            <div style="font-weight: bold; color: #333; font-size: 20px;">本地源管理</div>
+                        </div>
+                        <!-- 根容器 -->
+                        <div style="height: 85vh; display: flex; flex-direction: column; background: #f0f0f0;">
+                            <!-- 主内容容器 -->
+                            <div style="flex: 1; min-height: 0; padding: 8px; position: relative;">
+                                <!-- 左侧列表 -->
+                                <div id="sideList" style="width: 0;
+                overflow: hidden;
+                transition: width 0.2s ease;
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                bottom: 0px;
+                height: 100%;
+                z-index: 2;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 1px 0 4px rgba(0,0,0,0.1);">
+                                    <div style="padding: 8px; width: 134px; height: 100%; display: flex; flex-direction: column;">
+                                        <button id="addGroupBtn" class="weui-btn weui-btn_primary" style="width: 100%;
+                    height: 32px;
+                    padding: 0;
+                    font-size: 15px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;">新增分类</button>
+                                        <div style="height: 8px">
+                                        </div>
+                                        <!-- 列表容器 -->
+                                        <div id="listBox" style="flex: 1;
+                    overflow-y: auto;
+                    padding-bottom: 8px;
+                    box-sizing: border-box;
+                    scrollbar-gutter: stable;">
+                                            <div class="list-item">channel</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 右侧编辑区 -->
+                                <div id="mainContent" style="height: 100%;
+                background: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                margin-left: 0px;
+                transition: margin-left 0.2s ease;
+                box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;">
+                                    <!-- 操作栏 -->
+                                    <div style="flex-shrink: 0;
+                  display: flex;
+                  gap: 6px;
+                  margin-bottom: 8px;
+                  height: 32px;
+                  align-items: center;">
+                                        <input id="editInput" type="text" style="flex: 1;
+                    min-width: 60px;
+                    height: 100%;
+                    padding: 0 8px;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    font-size: 15px;
+                    box-sizing: border-box;
+                    margin-right: auto;">
+                                        <!-- 按钮组 -->
+                                        <div style="display: flex;
+                    gap: 3px;
+                    height: 100%;
+                    flex-shrink: 0;">
+                                            <button id="saveBtn" class="weui-btn weui-btn_primary" style="width: 80px;
+                      padding: 0;
+                      height: 32px;
+                      font-size: 15px;
+                      border-radius: 6px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;">保存</button>
+                                            <i>
+                                            </i>
+                                            <button id="deleteBtn" class="weui-btn weui-btn_warn" style="width: 80px;
+                      padding: 0;
+                      height: 32px;
+                      font-size: 15px;
+                      border-radius: 6px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;">删除</button>
+                                        </div>
+                                    </div>
+                                    <!-- 编辑区 -->
+                                    <textarea id="channelEditor" contenteditable="true" style="flex: 1;
+                  width: calc(100% - 18px);
+                  border: 1px solid #ddd;
+                  border-radius: 6px;
+                  padding: 8px;
+                  font-family: 'Arial', sans-serif;
+                  font-size: 15px;
+                  overflow: auto;
+                  white-space: pre;
+                  line-height: 1.6;
+                  resize: none;">channel,http://</textarea>
+                                </div>
+                            </div>
+                            <!-- 遮罩层 -->
+                            <div id="overlay" style="display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.3);
+              z-index: 1;">
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tablist" class="weui-tabbar">
+                        <div id="tab1" role="tab" aria-labelledby="t1_title" aria-selected="false" aria-controls="panel1" class="weui-tabbar__item">
+                            <img style="width: 20px; height: 20px; margin: 5px 0 5px 0;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjgyNDkxMzk2NDM2IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI0NjAiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxwYXRoIGQ9Ik01MTMuMyAxMDIzLjljLTM2LjUgMC03My4yLTMuOS0xMDkuNy0xMS44QzI3MC4xIDk4MyAxNTUuOCA5MDMuNyA4MS44IDc4OC43LTMxLjggNjExLjktMjYuNyAzODcgOTQuOSAyMTUuNmMxNC43LTIwLjcgNDMuNC0yNS41IDY0LTEwLjkgMjAuNyAxNC43IDI1LjUgNDMuMyAxMC45IDY0QzcwIDQwOS40IDY1LjggNTk0IDE1OSA3MzljNjAuNyA5NC40IDE1NC41IDE1OS41IDI2NC4xIDE4My4zIDEwOS42IDIzLjkgMjIyIDMuNSAzMTYuMy01Ny4yIDE5NC44LTEyNS4zIDI1MS40LTM4NS43IDEyNi4xLTU4MC41LTEyNS4yLTE5NC44LTM4NS42LTI1MS4zLTU4MC40LTEyNi0yMS4zIDEzLjctNDkuNyA3LjUtNjMuNC0xMy44LTEzLjctMjEuMy03LjUtNDkuNyAxMy44LTYzLjRDNDcyLjgtNzEuMyA3OTAuMi0yLjQgOTQyLjggMjM1YzE1Mi42IDIzNy40IDgzLjcgNTU0LjctMTUzLjYgNzA3LjQtODMuNiA1My43LTE3OC44IDgxLjUtMjc1LjkgODEuNXoiIGZpbGw9IiM1MTUxNTEiIHAtaWQ9IjI0NjEiPjwvcGF0aD48cGF0aCBkPSJNNTExLjEgNjc0LjhtLTU4LjYgMGE1OC42IDU4LjYgMCAxIDAgMTE3LjIgMCA1OC42IDU4LjYgMCAxIDAtMTE3LjIgMFoiIGZpbGw9IiM1MTUxNTEiIHAtaWQ9IjI0NjIiPjwvcGF0aD48cGF0aCBkPSJNNTExLjkgNTY0LjdjLTI1LjQgMC00NS45LTIwLjYtNDUuOS00NS45di0xNzdjMC0yNS40IDIwLjYtNDUuOSA0NS45LTQ1LjkgMjUuNCAwIDQ1LjkgMjAuNiA0NS45IDQ1Ljl2MTc3YzAuMSAyNS4zLTIwLjUgNDUuOS00NS45IDQ1Ljl6IiBmaWxsPSIjNTE1MTUxIiBwLWlkPSIyNDYzIj48L3BhdGg+PC9zdmc+" alt="" class="weui-tabbar__icon">
+                            <p aria-hidden="true" id="t1_title" class="weui-tabbar__label">说明</p>
+                        </div>
+                        <div id="tab2" role="tab" aria-labelledby="t2_title" aria-selected="true" aria-controls="panel2" class="weui-tabbar__item">
+                            <img style="width: 20px; height: 20px; margin: 5px 0 5px 0;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAC5AAAAuQHip0HoAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAANtQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhQHXOQAAAEh0Uk5TAAECBAUGCQoNDxITGiAhKC4xMjM0Nzg8P0BDT1dmbHR4fX+MlpedoKOkp6issri5vL2/zs/S19zd4OHi5OXp7e/x8/f6+/z+bkNkuAAAATRJREFUOMuNk2kzAmAUhR8iUSHSokWobCFLtFBI9fz/X+RDzdQY9brfzl3mbufAghVfVF+KLLHoh6p+RJckHGkxmSzq0ZKEjF2ArplfgcPjHYBC2w5Ax3YBYOf4cBovjfw82dy71/ElwOVY7/c2Tz4dlQB2h6q9b3uVxLQiUen53VMd7gINWwflgT7G503jjzoop55sQN5JBuK12sbiWBu1WhzSE/PcectSu/WOjs31uWcrm92ao/WmHc70OTtzbNfHOq5vz2D2Wc9Yq3zpBQCxV+339TUGwIV+VdaAxIMtAKq+5SD3bhWAlg+zvc+9BogMzQHkHEYAbjyf9bryFGDf/hT33Qc49eq/CaEWgSGDawYPFTx18Fl5J+mV76bhU2oVYcKUC5I2TPuwcP4tvaB4/5T/D6drVhrBHvH6AAAAAElFTkSuQmCC" alt="" class="weui-tabbar__icon">
+                            <p id="t2_title" aria-hidden="true" class="weui-tabbar__label">配置</p>
+                        </div>
+                        <div id="tab3" role="tab" aria-labelledby="t3_title" aria-selected="false" aria-controls="panel3" class="weui-tabbar__item weui-bar__item_on">
+                            <img style="width: 20px; height: 20px; margin: 5px 0 5px 0;" src="data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE1OTI3IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik00MjMuMTE4IDY4Ljk1MmwxLjQwMyAwLjQ5OCAzNTcuMDgzIDEyOS45NjhjNDYuMjQgMTYuODMgNzAuMzA3IDY3LjYxNSA1NC4yODkgMTEzLjk0OWwtMC40OTggMS40MDItMTYuNDg3IDQ1LjI5OEg4NzBjNDkuMjA5IDAgODkuMTkzIDM5LjQ5MiA4OS45ODggODguNTFsMC4wMTIgMS40ODh2NDE5LjkzOEM5NjAgOTE5LjcwNyA5MTkuNzA2IDk2MCA4NzAgOTYwSDE1NGMtNDkuNzA2IDAtOTAtNDAuMjkzLTkwLTg5Ljk5N1YzNTMuMDE4YzAtNDkuNzA0IDQwLjI5NC04OS45OTggOTAtODkuOTk4aDEwNC4yOWw1MC44NzctMTM5Ljc4MmMxNi44My00Ni4yNCA2Ny42MTYtNzAuMzA0IDExMy45NS01NC4yODZ6TTMwMC4yMjIgMzIzLjAySDE1NGMtMTYuNTY5IDAtMzAgMTMuNDMtMzAgMjkuOTk5djUxNi45ODVjMCAxNi41NjggMTMuNDMxIDI5Ljk5OSAzMCAyOS45OTloNzE2YzE2LjU2OSAwIDMwLTEzLjQzMSAzMC0zMFY0NTAuMDY2YzAtMTYuNTY4LTEzLjQzMS0zMC0zMC0zMEg0MTkuNzYzYTYwIDYwIDAgMCAxLTQ3LjM0Ni0yMy4xNDNsLTQ4LjUyMi02Mi4zMzFhMzAgMzAgMCAwIDAtMjMuNjczLTExLjU3MnogbTY1LjUtMTc5LjcyNGwtMC4xNzMgMC40NjQtNDQuMzEzIDEyMS43NDhhOTAuMDAyIDkwLjAwMiAwIDAgMSA1MC4wMDUgMzIuMjI5bDQ4LjUyMiA2Mi4zMzIgMzM1LjI5NC0wLjAwMSAyMy45NTctNjUuODE5YzUuNjEtMTUuNDEzLTIuMjAyLTMyLjQ0LTE3LjQ2Ni0zOC4yNzdsLTAuNDY1LTAuMTczTDQwNCAxMjUuODNjLTE1LjQxNC01LjYxLTMyLjQ0IDIuMjAxLTM4LjI3OCAxNy40NjV6IG03OC45MzggNDQuMzVsMjQ0LjMyMyA4OC45MjRjMTUuNDEzIDUuNjEgMjMuNDM1IDIyLjUzOCAxOC4wOTUgMzcuOTgybC0wLjE2NiAwLjQ2OGMtNS42NjYgMTUuNTY5LTIyLjg4MSAyMy41OTYtMzguNDUgMTcuOTNMNDI0LjE0IDI0NC4wMjVjLTE1LjQxNC01LjYxLTIzLjQzNS0yMi41MzctMTguMDk2LTM3Ljk4MmwwLjE2Ni0wLjQ2OGM1LjY2Ni0xNS41NjkgMjIuODgxLTIzLjU5NiAzOC40NS0xNy45M3oiIGZpbGw9IiMwMDAwMDAiIHAtaWQ9IjE1OTI4Ii8+PC9zdmc+" alt="" class="weui-tabbar__icon">
+                            <p id="t3_title" aria-hidden="true" class="weui-tabbar__label">文件</p>
+                        </div>
+                        <div id="tab4" role="tab" aria-labelledby="t4_title" aria-selected="false" aria-controls="panel4" class="weui-tabbar__item weui-bar__item_on">
+                            <img style="width: 20px; height: 20px; margin: 5px 0 5px 0;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzQzMTU5MTU3NTI4IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk5NjEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PHBhdGggZD0iTTg3My40NzIgOTc0Ljg0OEgxNjcuOTM2Yy01OS4zOTIgMC0xMTYuNzM2LTU0Ljc4NC0xMTYuNzM2LTExMS42MTZWMTQ3LjQ1NkM1MS4yIDg4LjA2NCAxMTAuNTkyIDUwLjY4OCAxNjcuOTM2IDUwLjY4OEg1NDcuODRjMTkuOTY4IDAgMzcuMzc2IDE3LjQwOCAzNy4zNzYgMzcuMzc2cy0xNy40MDggMzcuMzc2LTM3LjM3NiAzNy4zNzZIMTY3LjkzNmMtMjIuNTI4IDAtNDEuOTg0IDEyLjI4OC00MS45ODQgMjIuNTI4djcxNS4yNjRjMCAxNC44NDggMjUuMDg4IDM3LjM3NiA0MS45ODQgMzcuMzc2aDcwOC4wOTZjMTIuMjg4IDAgMjIuNTI4LTE5Ljk2OCAyMi41MjgtMzcuMzc2VjQ5Ny42NjRjMC0xOS45NjggMTcuNDA4LTM3LjM3NiAzNy4zNzYtMzcuMzc2czM3LjM3NiAxNy40MDggMzcuMzc2IDM3LjM3NnYzNjUuMDU2Yy0zLjA3MiA1NC43ODQtMzcuODg4IDExMi4xMjgtOTkuODQgMTEyLjEyOHoiIGZpbGw9IiM1MTUxNTEiIHAtaWQ9Ijk5NjIiPjwvcGF0aD48cGF0aCBkPSJNNDcxLjA0IDU3NC45NzZjLTkuNzI4IDAtMTkuOTY4LTUuMTItMjcuMTM2LTEyLjI4OC0xNC44NDgtMTQuODQ4LTE0Ljg0OC0zNy4zNzYgMC01Mi4yMjRsNDY0LjM4NC00NDkuNTM2YzE0Ljg0OC0xNC44NDggMzcuMzc2LTE0Ljg0OCA1Mi4yMjQgMHMxNC44NDggMzcuMzc2IDAgNTIuMjI0bC00NjQuMzg0IDQ1Mi4wOTZjLTUuMTIgNy4xNjgtMTUuMzYgOS43MjgtMjUuMDg4IDkuNzI4eiIgZmlsbD0iIzUxNTE1MSIgcC1pZD0iOTk2MyI+PC9wYXRoPjwvc3ZnPg==" alt="" class="weui-tabbar__icon">
+                            <p id="t4_title" aria-hidden="true" class="weui-tabbar__label">编辑</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fileInfoDialog" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div role="button" class="weui-mask">
+            </div>
+            <div class="weui-half-screen-dialog">
+                <div class="weui-half-screen-dialog__hd">
+                    <div class="weui-half-screen-dialog__hd__main">文件接口
+                        <span class="weui-half-screen-dialog__tips" role="option">点击使用时请打开应用内接口设置对话框</span>
+                    </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd" id="fileInfo">
+                    <div class="weui-form__control-area" style="margin-bottom: 0px !important;">
+                        <div class="weui-cells__group weui-cells__group_form">
+                            <div class="weui-cells">
+                                <!-- <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                <div class="weui-cell__hd"><label class="weui-label">测试地址</label></div>
+                                </div>
+                                <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                <div class="weui-cell__bd weui-flex">
+                                <input id="fileUrl0" class="weui-input weui-cell__control weui-cell__control_flex"
+                                type="text" value="" readonly />
+                                </div>
+                                </div> -->
+                                <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">本机地址</label>
+                                    </div>
+                                    <div class="weui-cell__bd weui-flex">
+                                        <button onclick="fileToApi(1); return false;" class="weui-cell__control weui-btn weui-btn_default weui-vcode-btn">使用</button>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                    <div class="weui-cell__bd weui-flex">
+                                        <input id="fileUrl1" class="weui-input weui-cell__control weui-cell__control_flex" type="text" value="" readonly />
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">局域网地址</label>
+                                    </div>
+                                    <div class="weui-cell__bd weui-flex">
+                                        <button onclick="fileToApi(2); return false;" class="weui-cell__control weui-btn weui-btn_default weui-vcode-btn">使用</button>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
+                                    <div class="weui-cell__bd weui-flex">
+                                        <input id="fileUrl2" class="weui-input weui-cell__control weui-cell__control_flex" type="text" value="" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-half-screen-dialog__ft" style="padding-bottom: 30px;">
+                    <div class="weui-half-screen-dialog__btn-area">
+                        <a href="javascript:void(0)" class="weui-btn weui-btn_default" onclick="hideFileInfo()">关闭</a>
+                        <a href="javascript:void(0)" id="renameFileBtn" class="weui-btn weui-btn_default" onclick="renameFile()">重命名</a>
+                        <a href="javascript:void(0)" id="delFileBtn" class="weui-btn weui-btn_warn" onclick="delFile()">删除</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="uploadTip" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">确认上传?</strong>
+                </div>
+                <div class="weui-dialog__bd" id="uploadTipContent">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:void(0)" onclick="doUpload(0)" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a role="button" href="javascript:void(0)" onclick="doUpload(1)" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="newFolder" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">新建文件夹</strong>
+                </div>
+                <div class="weui-dialog__bd">
+                    <input id="newFolderContent" class="weui-input weui-cell__control weui-cell__control_flex" type="text" value="" placeholder="请输入文件夹名称..." />
+                </div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:void(0)" onclick="doNewFolder(0)" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a role="button" href="javascript:void(0)" onclick="doNewFolder(1)" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="delFolder" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">删除文件夹</strong>
+                </div>
+                <div class="weui-dialog__bd" id="delFolderContent">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:void(0)" onclick="doDelFolder(0)" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a role="button" href="javascript:void(0)" onclick="doDelFolder(1)" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="delFile" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">删除文件</strong>
+                </div>
+                <div class="weui-dialog__bd" id="delFileContent">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:void(0)" onclick="doDelFile(0)" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a role="button" href="javascript:void(0)" onclick="doDelFile(1)" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="delGroupFileDialog" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">删除分类</strong>
+                </div>
+                <div class="weui-dialog__bd" id="delGroupFileContent">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:void(0)" onclick="delGroupFileCancel()" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a role="button" href="javascript:void(0)" onclick="delGroupFileOk()" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="addGroupNameDialog" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">新增分类</strong>
+                </div>
+                <div class="weui-dialog__bd">
+                    <input type="text" id="newGroupFileName" class="custom-input" value="" placeholder="请输入新增分类名称...">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:void(0)" class="weui-dialog__btn weui-dialog__btn_default" onclick="hideAddGroupNameDialog()">取消</a>
+                    <a href="javascript:void(0)" class="weui-dialog__btn weui-dialog__btn_primary" onclick="addGroupName()">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="dialog" aria-hidden="true" aria-modal="true" id="renameFileDialog" style="display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">新文件名</strong>
+                </div>
+                <div class="weui-dialog__bd">
+                    <input type="text" id="newFileName" class="custom-input" value="">
+                </div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:void(0)" class="weui-dialog__btn weui-dialog__btn_default" onclick="hideRenameDialog()">取消</a>
+                    <a href="javascript:void(0)" class="weui-dialog__btn weui-dialog__btn_primary" onclick="confirmRename()">确定</a>
+                </div>
+            </div>
+        </div>
+        <div role="alert" id="warnToast" style="display: none;">
+            <div class="weui-mask_transparent">
+            </div>
+            <div class="weui-toast">
+                <i class="weui-icon-warn weui-icon_toast">
+                </i>
+                <p class="weui-toast__content" id="warnToastContent">
+                </p>
+            </div>
+        </div>
+        <div role="alert" id="loadingToast" style="display: none;">
+            <div class="weui-mask_transparent">
+            </div>
+            <div class="weui-toast">
+                <span class="weui-primary-loading weui-icon_toast">
+                    <span class="weui-primary-loading__dot">
+                    </span>
+                </span>
+                <p class="weui-toast__content">加载中</p>
+            </div>
+        </div>
+        <script src="jquery.js">
+        </script>
+        <script src="script.js">
+        </script>
+    </body>
+
+</html>

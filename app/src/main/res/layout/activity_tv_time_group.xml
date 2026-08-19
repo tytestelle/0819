@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="end|top"
+    android:orientation="horizontal"
+    android:id="@+id/tvTimeGroupLayout"
+    android:background="@drawable/shape_time_netspeed_drawable"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp">
+    <TextView
+        android:textSize="40dp"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:id="@+id/tvChannelnum"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="1"
+        android:includeFontPadding="false"/>
+    <View
+        android:id="@+id/tvTimeDivider"
+        android:background="@color/color_FFFFFF_70"
+        android:visibility="gone"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/tvTimeGroup"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextClock
+            android:textSize="12dp"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="MM/dd EE"
+            android:format24Hour="MM/dd EE"/>
+        <TextClock
+            android:textSize="16dp"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_gravity="center"
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm:ss"
+            android:format24Hour="HH:mm:ss"/>
+    </LinearLayout>
+</LinearLayout>

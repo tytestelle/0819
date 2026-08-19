@@ -1,0 +1,38 @@
+package androidx.media3.exoplayer.audio;
+
+import androidx.media3.exoplayer.offline.DownloadHelper;
+import androidx.media3.exoplayer.source.preload.PreCacheHelper;
+
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO implements Runnable {
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public final /* synthetic */ int f2515O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+
+    /* JADX INFO: renamed from: O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO, reason: collision with root package name */
+    public final /* synthetic */ boolean f2516O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+
+    /* JADX INFO: renamed from: O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o, reason: collision with root package name */
+    public final /* synthetic */ Object f2517O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o;
+
+    public /* synthetic */ O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(int i, Object obj, boolean z) {
+        this.f2515O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = i;
+        this.f2517O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = obj;
+        this.f2516O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = z;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        switch (this.f2515O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                ((AudioRendererEventListener.EventDispatcher) this.f2517O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o).lambda$skipSilenceEnabledChanged$7(this.f2516O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO);
+                break;
+            case 1:
+                ((DownloadHelper) this.f2517O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o).lambda$onMediaPrepared$2(this.f2516O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO);
+                break;
+            default:
+                ((PreCacheHelper) this.f2517O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o).lambda$release$2(this.f2516O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO);
+                break;
+        }
+    }
+}

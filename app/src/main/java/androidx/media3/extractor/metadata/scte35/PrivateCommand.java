@@ -1,0 +1,35 @@
+package androidx.media3.extractor.metadata.scte35;
+
+import O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+import androidx.media3.common.util.ParsableByteArray;
+import androidx.media3.common.util.UnstableApi;
+
+/* JADX INFO: loaded from: classes.dex */
+@UnstableApi
+public final class PrivateCommand extends SpliceCommand {
+    public final byte[] commandBytes;
+    public final long identifier;
+    public final long ptsAdjustment;
+
+    private PrivateCommand(long j, byte[] bArr, long j2) {
+        this.ptsAdjustment = j2;
+        this.identifier = j;
+        this.commandBytes = bArr;
+    }
+
+    public static PrivateCommand parseFromSection(ParsableByteArray parsableByteArray, int i, long j) {
+        long unsignedInt = parsableByteArray.readUnsignedInt();
+        int i2 = i - 4;
+        byte[] bArr = new byte[i2];
+        parsableByteArray.readBytes(bArr, 0, i2);
+        return new PrivateCommand(unsignedInt, bArr, j);
+    }
+
+    @Override // androidx.media3.extractor.metadata.scte35.SpliceCommand
+    public String toString() {
+        StringBuilder sb = new StringBuilder("SCTE-35 PrivateCommand { ptsAdjustment=");
+        sb.append(this.ptsAdjustment);
+        sb.append(", identifier= ");
+        return O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo(sb, this.identifier, " }");
+    }
+}

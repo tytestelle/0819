@@ -1,0 +1,35 @@
+package O0000oO0O0oOoo0o0o000ooO0o0O0OooOOO0oO0O;
+
+import kotlin.jvm.internal.FunctionBase;
+import kotlin.jvm.internal.O00000Oo00O0oOOO0O0Ooo0Oo0OOooO0ooO0oO0o;
+import kotlin.jvm.internal.O00000OoOOoO0oOo0o0o0OoOOooOOo0o0O00000o;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 extends O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o implements FunctionBase {
+    private final int arity;
+
+    public O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0(int i, kotlin.coroutines.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000) {
+        super(o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000);
+        this.arity = i;
+    }
+
+    @Override // kotlin.jvm.internal.FunctionBase
+    public int getArity() {
+        return this.arity;
+    }
+
+    @Override // O0000oO0O0oOoo0o0o000ooO0o0O0OooOOO0oO0O.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO
+    public String toString() {
+        if (getCompletion() != null) {
+            return super.toString();
+        }
+        O00000Oo00O0oOOO0O0Ooo0Oo0OOooO0ooO0oO0o.f4007O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.getClass();
+        String strO0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = O00000OoOOoO0oOo0o0o0OoOOooOOo0o0O00000o.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(this);
+        kotlin.jvm.internal.O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0.O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo(strO0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, "renderLambdaToString(this)");
+        return strO0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+    }
+
+    public O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0(int i) {
+        this(i, null);
+    }
+}

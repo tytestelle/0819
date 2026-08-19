@@ -1,0 +1,34 @@
+package androidx.media3.exoplayer.audio;
+
+import android.media.AudioDeviceInfo;
+import androidx.media3.common.Format;
+import androidx.media3.common.util.Clock;
+import androidx.media3.exoplayer.analytics.PlayerId;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo {
+    public static AudioOffloadSupport O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(AudioSink audioSink, Format format) {
+        return AudioOffloadSupport.DEFAULT_UNSUPPORTED;
+    }
+
+    public static void O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(AudioSink audioSink) {
+    }
+
+    public static void O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o(AudioSink audioSink, Clock clock) {
+    }
+
+    public static void O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(AudioSink audioSink, int i) {
+    }
+
+    public static void O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(AudioSink audioSink, long j) {
+    }
+
+    public static void O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000(AudioSink audioSink, PlayerId playerId) {
+    }
+
+    public static void O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo(AudioSink audioSink, AudioDeviceInfo audioDeviceInfo) {
+    }
+
+    public static void O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo(AudioSink audioSink, int i, int i2) {
+    }
+}

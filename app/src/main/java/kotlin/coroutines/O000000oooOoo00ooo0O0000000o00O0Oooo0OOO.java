@@ -1,0 +1,36 @@
+package kotlin.coroutines;
+
+import kotlin.jvm.functions.Function2;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class O000000oooOoo00ooo0O0000000o00O0Oooo0OOO extends kotlin.jvm.internal.O000000ooOO0oOoOo00OoooOOo0OO00o0000o0oO implements Function2 {
+    public static final O000000oooOoo00ooo0O0000000o00O0Oooo0OOO INSTANCE = new O000000oooOoo00ooo0O0000000o00O0Oooo0OOO();
+
+    public O000000oooOoo00ooo0O0000000o00O0Oooo0OOO() {
+        super(2);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo invoke(O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo acc, O000000ooOO0oOoOo00OoooOOo0OO00o0000o0oO element) {
+        O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO o000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO;
+        kotlin.jvm.internal.O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0.O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(acc, "acc");
+        kotlin.jvm.internal.O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0.O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(element, "element");
+        O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey = acc.minusKey(element.getKey());
+        O00000O00oOOo000000OOOo00OOOo0OooOO00OO0 o00000O00oOOo000000OOOo00OOOo0OooOO00OO0 = O00000O00oOOo000000OOOo00OOOo0OooOO00OO0.INSTANCE;
+        if (o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey == o00000O00oOOo000000OOOo00OOOo0OooOO00OO0) {
+            return element;
+        }
+        O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo o000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo = O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo.f4000O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+        O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 = (O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0) o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey.get(o000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo);
+        if (o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 == null) {
+            o000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO = new O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey, element);
+        } else {
+            O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey2 = o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey.minusKey(o000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo);
+            if (o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey2 == o00000O00oOOo000000OOOo00OOOo0OooOO00OO0) {
+                return new O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(element, o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0);
+            }
+            o000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO = new O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(new O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0OoMinusKey2, element), o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0);
+        }
+        return o000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO;
+    }
+}

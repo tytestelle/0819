@@ -1,0 +1,11 @@
+package androidx.media3.exoplayer.drm;
+
+import java.util.UUID;
+
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class O000000ooo0oOOoOo00ooOOOOooOoooOoo0oo00O implements ExoMediaDrm.Provider {
+    @Override // androidx.media3.exoplayer.drm.ExoMediaDrm.Provider
+    public final ExoMediaDrm acquireExoMediaDrm(UUID uuid) {
+        return FrameworkMediaDrm.lambda$static$0(uuid);
+    }
+}

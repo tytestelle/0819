@@ -1,0 +1,205 @@
+package com.google.common.collect;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO implements O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO {
+
+    /* JADX INFO: renamed from: O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3594O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(0);
+
+    /* JADX INFO: renamed from: O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3595O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(1);
+
+    /* JADX INFO: renamed from: O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3596O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(2);
+
+    /* JADX INFO: renamed from: O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3597O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(3);
+
+    /* JADX INFO: renamed from: O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3598O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(4);
+
+    /* JADX INFO: renamed from: O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000, reason: collision with root package name */
+    public static final O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO f3599O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 = new O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(5);
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public final /* synthetic */ int f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+
+    public /* synthetic */ O000o000o0Oo0OoO00o000O0oOO0oo0O0OO0O0OO(int i) {
+        this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = i;
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00 O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(O000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, int i) {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return new O000o000ooooOooooO000o0oOoo000oO0O0oO000(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+            case 1:
+                return new O000o00OOoOo0O0ooO0o00O0ooOooOOoO00o0OoO(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+            case 2:
+                return new O000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+            case 3:
+                return new O000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+            case 4:
+                return new O000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+            default:
+                return new O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o(o000o0OoO0o0oOo00O0O0oO0oooo000OOo0ooOoO, i);
+        }
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00 o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00, O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000, O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001) {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                O000o000oooO0000oo000OoOOOoo0oooooOOO0oO o000o000oooO0000oo000OoOOOoo0oooooOOO0oO = (O000o000oooO0000oo000OoOOOoo0oooooOOO0oO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o000oooO0000oo000OoOOOoo0oooooOOO0oO o000o000oooO0000oo000OoOOOoo0oooooOOO0oO2 = (O000o000oooO0000oo000OoOOOoo0oooooOOO0oO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                Object obj = o000o000oooO0000oo000OoOOOoo0oooooOOO0oO.f3579O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                int i = o000o000oooO0000oo000OoOOOoo0oooooOOO0oO.f3580O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+                return o000o000oooO0000oo000OoOOOoo0oooooOOO0oO2 == null ? new O000o000oooO0000oo000OoOOOoo0oooooOOO0oO(obj, i) : new O000o000oo0OOoO00OOo00oOO0O0oOO0oO0Oo0oo(obj, i, o000o000oooO0000oo000OoOOOoo0oooooOOO0oO2);
+            case 1:
+                O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o = (O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o2 = (O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                Object obj2 = o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o.f3579O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                int i2 = o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o.f3580O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+                O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o3 = o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o2 == null ? new O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o(obj2, i2) : new O000o00OO0OOOoooOoooO0o0oo0oo0Oo0O0OooOo(obj2, i2, o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o2);
+                o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o3.f3603O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o.f3603O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o;
+                return o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o3;
+            case 2:
+                O000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0 o000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0 = (O000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O = (O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O2 = (O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                if (O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00.isCollected(o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O)) {
+                    return null;
+                }
+                Object obj3 = o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O.f3579O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                int i3 = o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O.f3580O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+                O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O3 = o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O2 == null ? new O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O(obj3, i3) : new O000o00oOo0O0O0oooO0oOOOO0o0OooO0O0o0O00(obj3, i3, o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O2);
+                o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O3.f3605O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O.f3605O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(o000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0.queueForValues, o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O3);
+                return o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O3;
+            case 3:
+                O000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0 o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0 = (O000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 = (O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o01 = (O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                T t = o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00.get();
+                if (t == 0) {
+                    return null;
+                }
+                int i4 = o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00.f3581O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                return o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o01 == null ? new O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00(o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0.queueForKeys, t, i4) : new O000o0O00Oo0O0OoOOooo00oOoo0OOooO0ooo0o0(o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0.queueForKeys, t, i4, o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o01);
+            case 4:
+                O000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o = (O000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO = (O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO2 = (O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                T t2 = o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO.get();
+                if (t2 == 0) {
+                    return null;
+                }
+                int i5 = o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO.f3581O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO3 = o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO2 == null ? new O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO(o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o.queueForKeys, t2, i5) : new O000o0O0oO00OooOOOoooo0oOooO00O0OoOO000O(o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o.queueForKeys, t2, i5, o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO2);
+                o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO3.f3608O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO.f3608O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+                return o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO3;
+            default:
+                O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o = (O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo = (O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo2 = (O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo001;
+                T t3 = o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo.get();
+                O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo3 = null;
+                if (t3 != 0 && !O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00.isCollected(o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo)) {
+                    int i6 = o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo.f3581O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+                    o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo3 = o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo2 == null ? new O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo(o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o.queueForKeys, t3, i6) : new O000o0OO0oo0Oo00o0o0O0oO0O0oO0OooOOo0000(o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o.queueForKeys, t3, i6, o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo2);
+                    o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo3.f3610O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo.f3610O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o.queueForValues, o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo3);
+                }
+                return o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo3;
+        }
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o() {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 1:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 2:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 3:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.WEAK;
+            case 4:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.WEAK;
+            default:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.WEAK;
+        }
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo() {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 1:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 2:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.WEAK;
+            case 3:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            case 4:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.STRONG;
+            default:
+                return O000o000o00oOoO00o0oO00oOo0o0OOOO00oOoOO.WEAK;
+        }
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public void O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00 o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00, O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000, Object obj) {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                break;
+            case 1:
+                ((O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000).f3603O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = obj;
+                break;
+            case 2:
+                O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O = (O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO o000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO = o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O.f3605O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o;
+                o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O.f3605O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o = new O000o0Oo000OoO000oO000Oo0oOo0oOOOoO0O000(((O000o0O000000OoOOo0Oo00O0OoOo0oOOoooOoO0) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00).queueForValues, obj, o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O);
+                o000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO.clear();
+                break;
+            case 3:
+                break;
+            case 4:
+                ((O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000).f3608O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = obj;
+                break;
+            default:
+                O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo = (O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                O000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO o000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO2 = o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo.f3610O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+                o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo.f3610O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = new O000o0Oo000OoO000oO000Oo0oOo0oOOOoO0O000(((O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00).queueForValues, obj, o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo);
+                o000o0Oo000O0oOo0OOoo0oo0oOo0OOOO0oo00OO2.clear();
+                break;
+        }
+    }
+
+    @Override // com.google.common.collect.O000Ooooo00ooOooo0ooooO0OoOoOOo000OO0OoO
+    public O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO(O000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00 o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00, Object obj, int i, O000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000 o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000) {
+        switch (this.f3600O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                O000o000oooO0000oo000OoOOOoo0oooooOOO0oO o000o000oooO0000oo000OoOOOoo0oooooOOO0oO = (O000o000oooO0000oo000OoOOOoo0oooooOOO0oO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o000oooO0000oo000OoOOOoo0oooooOOO0oO == null ? new O000o000oooO0000oo000OoOOOoo0oooooOOO0oO(obj, i) : new O000o000oo0OOoO00OOo00oOO0O0oOO0oO0Oo0oo(obj, i, o000o000oooO0000oo000OoOOOoo0oooooOOO0oO);
+            case 1:
+                O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o = (O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o == null ? new O000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o(obj, i) : new O000o00OO0OOOoooOoooO0o0oo0oo0Oo0O0OooOo(obj, i, o000o00OO0OOoOOo0O0Oo0Ooo0000ooOO0o00o0o);
+            case 2:
+                O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O = (O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O == null ? new O000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O(obj, i) : new O000o00oOo0O0O0oooO0oOOOO0o0OooO0O0o0O00(obj, i, o000o00oOoo0O0o0OOO0ooOooOO00O0Ooooooo0O);
+            case 3:
+                O000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0 o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0 = (O000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 = (O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00 == null ? new O000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00(o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0.queueForKeys, obj, i) : new O000o0O00Oo0O0OoOOooo00oOoo0OOooO0ooo0o0(o000o0O0o0O00ooOoOoOoOo0Oo0O0OOO0o000Oo0.queueForKeys, obj, i, o000o0O0OOO0OO0O0oOOOOo00oOO000O000O0o00);
+            case 4:
+                O000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o = (O000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO = (O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO == null ? new O000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO(o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o.queueForKeys, obj, i) : new O000o0O0oO00OooOOOoooo0oOooO00O0OoOO000O(o000o0OO00OO0oo000O0OOooOO0o0oOO0OO0000o.queueForKeys, obj, i, o000o0OO000000oO0Ooo0O0oooO000Oo000oOOoO);
+            default:
+                O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o = (O000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o) o000OooooOOooO0OOOoOOoo0OOo0OoOO0O000o00;
+                O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo = (O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo) o000Oooo0oo00o0OOo0o0oOOO0o0oo0O0ooOo000;
+                return o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo == null ? new O000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo(o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o.queueForKeys, obj, i) : new O000o0OO0oo0Oo00o0o0O0oO0O0oO0OooOOo0000(o000o0OOOoooo0OO00OOo000ooOooO00Oo0o000o.queueForKeys, obj, i, o000o0OOOoO0oo0OOOO0oOooo0OO0oOOO0oOOOOo);
+        }
+    }
+}

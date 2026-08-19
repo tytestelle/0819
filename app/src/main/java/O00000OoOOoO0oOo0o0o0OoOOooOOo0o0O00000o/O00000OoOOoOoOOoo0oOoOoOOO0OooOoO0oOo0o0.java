@@ -1,0 +1,8 @@
+package O00000OoOOoO0oOo0o0o0OoOOooOOo0o0O00000o;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface O00000OoOOoOoOOoo0oOoOoOOO0OooOoO0oOo0o0 {
+    boolean O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(Object obj);
+
+    O00000OoOOoO0oOo0o0o0OoOOooOOo0o0O00000o O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(Object obj, int i, int i2, O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo.O000000oooOoo00ooo0O0000000o00O0Oooo0OOO o000000oooOoo00ooo0O0000000o00O0Oooo0OOO);
+}

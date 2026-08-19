@@ -1,0 +1,8 @@
+package O000O000O00OO0Oooo0o0O00OoOoOo00O0oOooOo;
+
+import O0000oooOooOoOoOO0oO0O0oooo000OoOOO0o00o.O00000O00oOOo000000OOOo00OOOo0OooOO00OO0;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO extends O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO implements O00000O00oOOo000000OOOo00OOOo0OooOO00OO0 {
+    public abstract Object O00000O00oOOo000000OOOo00OOOo0OooOO00OO0(Object obj, Class cls);
+}

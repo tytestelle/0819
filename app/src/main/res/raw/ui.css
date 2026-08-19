@@ -1,0 +1,121 @@
+body,
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: system-ui, -apple-system, Helvetica Neue, sans-serif;
+}
+.page,
+body {
+  background-color: var(--weui-BG-0);
+}
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-media-box {
+    padding: 10px;
+}
+
+.weui-media-box__title {
+    cursor: pointer;
+    color: #007aff;
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.weui-media-box__desc {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.weui-media-box__desc.expanded {
+    height: auto;
+    opacity: 1;
+    transform: scaleY(1);
+    padding: 10px 15px;
+    line-height: 2.0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    display: block;
+}
+
+     /* 函数分组样式 */
+.function-group {
+    margin-bottom: 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    word-wrap: break-word;
+    overflow: visible;
+}
+.function-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.function-header:hover {
+    background: #e9ecef;
+}
+
+.function-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.function-toggle {
+    color: #666;
+    transition: transform 0.2s ease;
+}
+
+.function-content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.function-content.expanded {
+     height: auto;
+     opacity: 1;
+     transform: scaleY(1);
+     padding: 10px 15px;
+     line-height: 2.0;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     margin: 0;
+     display: block;
+}
+
+/* 折叠时直接隐藏，无动画 */
+.function-group.collapsing .function-content {
+    transition: none;
+}

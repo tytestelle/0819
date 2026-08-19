@@ -1,0 +1,121 @@
+package O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class O00000o0ooOoO0oO0Oo0O0Oo00O00OOooooo0000 extends O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO {
+
+    /* JADX INFO: renamed from: O000000oooOoo00ooo0O0000000o00O0Oooo0OOO, reason: collision with root package name */
+    public O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO;
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public O00000o0ooOoO0oO0Oo0O0Oo00O00OOooooo0000(O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000) {
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = (O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000;
+        super(2, !o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.O00000o00OOOOo0o00Oo00OooOoooOO0OOOoOoo0());
+        this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.buffer();
+        O0000O000OOOoo0o00O0000O00OoOo0000ooOOo0(o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1695O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo);
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1694O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o);
+        this.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo;
+        this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO() ? 1 : 2;
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final int O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO() {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO();
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final int O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(int i, int i2, int i3, byte[] bArr) {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(i, 0, i3, bArr);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(int i, int i2) {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0(i, i2);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final boolean O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO() {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO();
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final byte O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000(int i) {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000(i);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final byte[] O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo() {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo();
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final int O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0(int i, int i2, int i3, byte[] bArr) {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0(i, i2, i3, bArr);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final boolean O000000ooOO0oOoOo00OoooOOo0OO00o0000o0oO() {
+        return true;
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final void O000000ooo0oOOoOo00ooOOOOooOoooOoo0oo00O(int i, byte b) {
+        this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O000000ooo0oOOoOo00ooOOOOooOoooOoo0oo00O(i, b);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final int O00000O00oOOo000000OOOo00OOOo0OooOO00OO0(int i, O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000) {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.O00000O00oOOo000000OOOo00OOOo0OooOO00OO0(i, o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000);
+    }
+
+    public final void O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o(int i, int i2) {
+        int i3 = this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+        this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = 2;
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(0);
+        O0000O000OOOoo0o00O0000O00OoOo0000ooOOo0(i2);
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(i);
+        this.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo = -1;
+        this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = i3;
+    }
+
+    public final void O0000O0o000O0OOOOo0OO00O00ooo00o0OO00oO0(O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000) {
+        this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = 2;
+        this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO = o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000.buffer();
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(0);
+        O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = (O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000;
+        O0000O000OOOoo0o00O0000O00OoOo0000ooOOo0(o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1695O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo);
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1694O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o);
+        this.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo = o0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo;
+        this.f1692O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = o000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO() ? 1 : 2;
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000 buffer() {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO.buffer();
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final void clear() {
+        this.f1699O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo = -1;
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(0);
+        O0000O000OOOoo0o00O0000O00OoOo0000ooOOo0(((O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO).f1694O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o);
+        O00000oo0O0Oo0OO0oOoOoOOOOoOOoo0oOoOOOoO(((O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO).f1694O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO
+    public boolean equals(Object obj) {
+        return this == obj || ((obj instanceof O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000) && obj.equals(this)) || super.equals(obj);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO
+    public final String toString() {
+        return this.f1730O000000oooOoo00ooo0O0000000o00O0Oooo0OOO == null ? "INVALID" : super.toString();
+    }
+
+    public O00000o0ooOoO0oO0Oo0O0Oo00O00OOooooo0000() {
+        super(2, true);
+    }
+
+    @Override // O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, O0000oo0o0oooOO0O00oooOOoO0oOoOoOo000o00.O000000oOo0oOOOOoO0ooooo0oOOoO00Oo0Oo000
+    public final void O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00() {
+    }
+}

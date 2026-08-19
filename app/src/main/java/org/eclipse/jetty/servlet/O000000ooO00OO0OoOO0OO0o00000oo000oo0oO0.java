@@ -1,0 +1,6 @@
+package org.eclipse.jetty.servlet;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 {
+    public abstract void O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(O0000o0oO000o0OO00oOoOOO0OOOO0ooOO000oOO.O000000ooo0oOOoOo00ooOOOOooOoooOoo0oo00O o000000ooo0oOOoOo00ooOOOOooOoooOoo0oo00O, O0000o0oO000o0OO00oOoOOO0OOOO0ooOO000oOO.O00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo o00000O000oo0oO0OOOoooo00ooOOOO0o0Ooo0Oo);
+}

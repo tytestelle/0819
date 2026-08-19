@@ -1,0 +1,95 @@
+package O00000o0oO0O0o0Oo0Oo0O0Oo0o0O0oOooOoOO0O;
+
+import O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00.O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o;
+import android.graphics.Bitmap;
+import android.graphics.drawable.AnimatedImageDrawable;
+import android.graphics.drawable.Drawable;
+import java.io.File;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class O0000O000O000oo0Ooo0oOOOO0OOooOoO0OooO0o implements O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o {
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public final /* synthetic */ int f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+
+    /* JADX INFO: renamed from: O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO, reason: collision with root package name */
+    public final Object f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+
+    public /* synthetic */ O0000O000O000oo0Ooo0oOOOO0OOooOoO0OooO0o(Object obj, int i) {
+        this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = i;
+        this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = obj;
+    }
+
+    @Override // O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00.O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o
+    public final Class O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO() {
+        switch (this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return Bitmap.class;
+            case 1:
+                return byte[].class;
+            case 2:
+                return Drawable.class;
+            default:
+                return ((File) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).getClass();
+        }
+    }
+
+    @Override // O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00.O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o
+    public final Object get() {
+        switch (this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return (Bitmap) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+            case 1:
+                return (byte[]) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+            case 2:
+                return (AnimatedImageDrawable) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+            default:
+                return (File) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO;
+        }
+    }
+
+    @Override // O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00.O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o
+    public final int getSize() {
+        switch (this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 0:
+                return O0000O0OOoo00o0Oo0ooOOo0o0oOooooOOO00000.O00000OOoOOO00O00o0ooooooooO000ooooO0000.O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o((Bitmap) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO);
+            case 1:
+                return ((byte[]) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).length;
+            case 2:
+                return O0000O0OOoo00o0Oo0ooOOo0o0oOooooOOO00000.O00000OOoOOO00O00o0ooooooooO000ooooO0000.O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo(Bitmap.Config.ARGB_8888) * ((AnimatedImageDrawable) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).getIntrinsicHeight() * ((AnimatedImageDrawable) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).getIntrinsicWidth() * 2;
+            default:
+                return 1;
+        }
+    }
+
+    @Override // O00000OO000O000Oo0000oOOo0OO0oOoo0o0oo00.O0000O0OoooOO0Oo0oO0oo0O00Oo0oooOOoOOO0o
+    public final void recycle() {
+        switch (this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO) {
+            case 2:
+                ((AnimatedImageDrawable) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).stop();
+                ((AnimatedImageDrawable) this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO).clearAnimationCallbacks();
+                break;
+        }
+    }
+
+    public O0000O000O000oo0Ooo0oOOOO0OOooOoO0OooO0o(byte[] bArr) {
+        this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = 1;
+        O0000O0OOoo00o0Oo0ooOOo0o0oOooooOOO00000.O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo.O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o(bArr, "Argument must not be null");
+        this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = bArr;
+    }
+
+    public O0000O000O000oo0Ooo0oOOOO0OOooOoO0OooO0o(File file) {
+        this.f631O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = 3;
+        O0000O0OOoo00o0Oo0ooOOo0o0oOooooOOO00000.O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo.O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o(file, "Argument must not be null");
+        this.f632O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO = file;
+    }
+
+    private final void O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO() {
+    }
+
+    private final void O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o() {
+    }
+
+    private final void O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo() {
+    }
+}

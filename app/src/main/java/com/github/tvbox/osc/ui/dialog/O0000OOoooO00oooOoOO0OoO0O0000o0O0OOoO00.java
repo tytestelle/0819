@@ -1,0 +1,16 @@
+package com.github.tvbox.osc.ui.dialog;
+
+import O0000Oo00O0OOOO00oo000oOO0oOO000oO00OOoo.O0000o00o000O0ooo0oOooO00o0ooO000Oo0ooOo;
+
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class O0000OOoooO00oooOoOO0OoO0O0000o0O0OOoO00 implements O0000o00o000O0ooo0oOooO00o0ooO000Oo0ooOo, O0000Oo00O0OOOOoOo0Oo00ooO0OOOoO00OoO0oo.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO {
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public final /* synthetic */ O0000Oo00000ooOOo0oo000OOOoo000OoOoo0O00 f3289O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+
+    @Override // O0000Oo00O0OOOOoOo0Oo00ooO0OOOoO00OoO0oo.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO
+    public void O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(int i) {
+        O0000Oo00000ooOOo0oo000OOOoo000OoOoo0O00 o0000Oo00000ooOOo0oo000OOOoo000OoOoo0O00 = this.f3289O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+        o0000Oo00000ooOOo0oo000OOOoo000OoOoo0O00.f3291O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.post(new O0000Oo00O0OOOO00oo000oOO0oOO000oO00OOoo.O000000oooOoo00ooo0O0000000o00O0Oooo0OOO(o0000Oo00000ooOOo0oo000OOOoo000OoOoo0O00, i, 12));
+    }
+}

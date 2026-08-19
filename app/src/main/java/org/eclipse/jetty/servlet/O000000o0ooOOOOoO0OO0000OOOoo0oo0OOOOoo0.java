@@ -1,0 +1,34 @@
+package org.eclipse.jetty.servlet;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: loaded from: classes2.dex */
+public final class O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 {
+    public static final O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 ANNOTATION;
+    public static final O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 DESCRIPTOR;
+    public static final O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 EMBEDDED;
+    public static final O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 JAVAX_API;
+
+    /* JADX INFO: renamed from: O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO, reason: collision with root package name */
+    public static final /* synthetic */ O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0[] f4392O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO;
+
+    static {
+        O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 = new O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0("EMBEDDED", 0);
+        EMBEDDED = o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0;
+        O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo1 = new O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0("JAVAX_API", 1);
+        JAVAX_API = o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo1;
+        O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo2 = new O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0("DESCRIPTOR", 2);
+        DESCRIPTOR = o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo2;
+        O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo3 = new O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0("ANNOTATION", 3);
+        ANNOTATION = o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo3;
+        f4392O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO = new O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0[]{o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0, o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo1, o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo2, o000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo3};
+    }
+
+    public static O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 valueOf(String str) {
+        return (O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0) Enum.valueOf(O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0.class, str);
+    }
+
+    public static O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0[] values() {
+        return (O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0[]) f4392O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO.clone();
+    }
+}

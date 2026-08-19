@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@+id/urlName"
+            android:background="@drawable/shape_dialog_button_style"
+            android:focusable="true"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/urlDeButton"
+            android:background="@drawable/shape_dialog_button_style"
+            android:padding="4dp"
+            android:focusable="true"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_delete"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+</LinearLayout>

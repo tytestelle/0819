@@ -1,0 +1,110 @@
+package androidx.media3.exoplayer.rtsp;
+
+import android.os.Handler;
+import androidx.annotation.Nullable;
+import androidx.media3.common.C;
+import androidx.media3.common.DataReader;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.Util;
+import androidx.media3.datasource.DataSourceUtil;
+import androidx.media3.exoplayer.upstream.Loader;
+import androidx.media3.extractor.DefaultExtractorInput;
+import androidx.media3.extractor.ExtractorInput;
+import androidx.media3.extractor.ExtractorOutput;
+import androidx.media3.extractor.PositionHolder;
+
+/* JADX INFO: loaded from: classes.dex */
+final class RtpDataLoadable implements Loader.Loadable {
+
+    @Nullable
+    private RtpDataChannel dataChannel;
+    private final EventListener eventListener;
+    private RtpExtractor extractor;
+    private DefaultExtractorInput extractorInput;
+    private volatile boolean loadCancelled;
+    private volatile long nextRtpTimestamp;
+    private final ExtractorOutput output;
+    private final RtpDataChannel.Factory rtpDataChannelFactory;
+    public final RtspMediaTrack rtspMediaTrack;
+    public final int trackId;
+    private final Handler playbackThreadHandler = Util.createHandlerForCurrentLooper();
+    private volatile long pendingSeekPositionUs = C.TIME_UNSET;
+
+    public interface EventListener {
+        void onTransportReady(String str, RtpDataChannel rtpDataChannel);
+    }
+
+    public RtpDataLoadable(int i, RtspMediaTrack rtspMediaTrack, EventListener eventListener, ExtractorOutput extractorOutput, RtpDataChannel.Factory factory) {
+        this.trackId = i;
+        this.rtspMediaTrack = rtspMediaTrack;
+        this.eventListener = eventListener;
+        this.output = extractorOutput;
+        this.rtpDataChannelFactory = factory;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$load$0(String str, RtpDataChannel rtpDataChannel) {
+        this.eventListener.onTransportReady(str, rtpDataChannel);
+    }
+
+    @Override // androidx.media3.exoplayer.upstream.Loader.Loadable
+    public void cancelLoad() {
+        this.loadCancelled = true;
+    }
+
+    @Override // androidx.media3.exoplayer.upstream.Loader.Loadable
+    public void load() {
+        if (this.loadCancelled) {
+            this.loadCancelled = false;
+        }
+        try {
+            if (this.dataChannel == null) {
+                RtpDataChannel rtpDataChannelCreateAndOpenDataChannel = this.rtpDataChannelFactory.createAndOpenDataChannel(this.trackId);
+                this.dataChannel = rtpDataChannelCreateAndOpenDataChannel;
+                this.playbackThreadHandler.post(new O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO(this, rtpDataChannelCreateAndOpenDataChannel.getTransport(), this.dataChannel, 0));
+                this.extractorInput = new DefaultExtractorInput((DataReader) Assertions.checkNotNull(this.dataChannel), 0L, -1L);
+                RtpExtractor rtpExtractor = new RtpExtractor(this.rtspMediaTrack.payloadFormat, this.trackId);
+                this.extractor = rtpExtractor;
+                rtpExtractor.init(this.output);
+            }
+            while (!this.loadCancelled) {
+                if (this.pendingSeekPositionUs != C.TIME_UNSET) {
+                    ((RtpExtractor) Assertions.checkNotNull(this.extractor)).seek(this.nextRtpTimestamp, this.pendingSeekPositionUs);
+                    this.pendingSeekPositionUs = C.TIME_UNSET;
+                }
+                if (((RtpExtractor) Assertions.checkNotNull(this.extractor)).read((ExtractorInput) Assertions.checkNotNull(this.extractorInput), new PositionHolder()) == -1) {
+                    break;
+                }
+            }
+            this.loadCancelled = false;
+        } finally {
+            if (((RtpDataChannel) Assertions.checkNotNull(this.dataChannel)).needsClosingOnLoadCompletion()) {
+                DataSourceUtil.closeQuietly(this.dataChannel);
+                this.dataChannel = null;
+            }
+        }
+    }
+
+    public void resetForSeek() {
+        ((RtpExtractor) Assertions.checkNotNull(this.extractor)).preSeek();
+    }
+
+    public void seekToUs(long j, long j2) {
+        this.pendingSeekPositionUs = j;
+        this.nextRtpTimestamp = j2;
+    }
+
+    public void setSequenceNumber(int i) {
+        if (((RtpExtractor) Assertions.checkNotNull(this.extractor)).hasReadFirstRtpPacket()) {
+            return;
+        }
+        this.extractor.setFirstSequenceNumber(i);
+    }
+
+    public void setTimestamp(long j) {
+        if (j == C.TIME_UNSET || ((RtpExtractor) Assertions.checkNotNull(this.extractor)).hasReadFirstRtpPacket()) {
+            return;
+        }
+        this.extractor.setFirstTimestamp(j);
+    }
+}

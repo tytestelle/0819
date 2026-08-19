@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/color_FFFFFF"
+            android:gravity="center"
+            android:id="@+id/backup"
+            android:background="@drawable/shape_dialog_button_style"
+            android:focusable="true"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:text="备份数据"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/color_FFFFFF_90"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击列表项进行数据还原"/>
+    <com.github.tvbox.osc.ui.tv.CustomView.CustomRecyclerView
+        android:id="@+id/mBackupGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:maxHeight="170dp"/>
+</LinearLayout>

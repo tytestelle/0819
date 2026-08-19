@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="55dp"
+    android:layout_height="40dp"
+    android:layout_margin="5dp">
+    <com.github.tvbox.osc.ui.tv.CustomView.MarqueeTextView
+        android:gravity="center"
+        android:id="@+id/viewColor"
+        android:background="@drawable/shape_menulist_item_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.github.tvbox.osc.ui.tv.CustomView.MarqueeTextView
+        android:id="@+id/backgroundLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/badgeContainer"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/viewColor"
+        android:layout_alignEnd="@+id/viewColor"/>
+</RelativeLayout>

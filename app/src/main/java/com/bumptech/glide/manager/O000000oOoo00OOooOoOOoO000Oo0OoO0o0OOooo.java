@@ -1,0 +1,8 @@
+package com.bumptech.glide.manager;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface O000000oOoo00OOooOoOOoO000Oo0OoO0o0OOooo {
+    void O0000000Oo0o0O00ooOooooooO0000Oo0oO0O0oO(O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0);
+
+    void O000000OoooOoo0Ooo0OO00o00oOOo0O0ooooO0o(O000000ooO00OO0OoOO0OO0o00000oo000oo0oO0 o000000ooO00OO0OoOO0OO0o00000oo000oo0oO0);
+}

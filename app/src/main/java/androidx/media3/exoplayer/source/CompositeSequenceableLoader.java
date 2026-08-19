@@ -1,0 +1,151 @@
+package androidx.media3.exoplayer.source;
+
+import androidx.media3.common.C;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.UnstableApi;
+import androidx.media3.exoplayer.LoadingInfo;
+import com.google.common.collect.O0000ooOOOoO00Oo0O00ooOO0OOOOOO0OOOoO0oO;
+import com.google.common.collect.O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+@UnstableApi
+public final class CompositeSequenceableLoader implements SequenceableLoader {
+    private long lastAudioVideoBufferedPositionUs;
+    private final O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O loadersWithTrackTypes;
+
+    public static final class SequenceableLoaderWithTrackTypes implements SequenceableLoader {
+        private final SequenceableLoader loader;
+        private final O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O trackTypes;
+
+        public SequenceableLoaderWithTrackTypes(SequenceableLoader sequenceableLoader, List<Integer> list) {
+            this.loader = sequenceableLoader;
+            this.trackTypes = O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O.copyOf((Collection) list);
+        }
+
+        @Override // androidx.media3.exoplayer.source.SequenceableLoader
+        public boolean continueLoading(LoadingInfo loadingInfo) {
+            return this.loader.continueLoading(loadingInfo);
+        }
+
+        @Override // androidx.media3.exoplayer.source.SequenceableLoader
+        public long getBufferedPositionUs() {
+            return this.loader.getBufferedPositionUs();
+        }
+
+        @Override // androidx.media3.exoplayer.source.SequenceableLoader
+        public long getNextLoadPositionUs() {
+            return this.loader.getNextLoadPositionUs();
+        }
+
+        public O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O getTrackTypes() {
+            return this.trackTypes;
+        }
+
+        @Override // androidx.media3.exoplayer.source.SequenceableLoader
+        public boolean isLoading() {
+            return this.loader.isLoading();
+        }
+
+        @Override // androidx.media3.exoplayer.source.SequenceableLoader
+        public void reevaluateBuffer(long j) {
+            this.loader.reevaluateBuffer(j);
+        }
+    }
+
+    @Deprecated
+    public CompositeSequenceableLoader(SequenceableLoader[] sequenceableLoaderArr) {
+        this(O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O.copyOf(sequenceableLoaderArr), Collections.nCopies(sequenceableLoaderArr.length, O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O.of(-1)));
+    }
+
+    @Override // androidx.media3.exoplayer.source.SequenceableLoader
+    public boolean continueLoading(LoadingInfo loadingInfo) {
+        boolean zContinueLoading;
+        boolean z = false;
+        do {
+            long nextLoadPositionUs = getNextLoadPositionUs();
+            if (nextLoadPositionUs == Long.MIN_VALUE) {
+                break;
+            }
+            zContinueLoading = false;
+            for (int i = 0; i < this.loadersWithTrackTypes.size(); i++) {
+                long nextLoadPositionUs2 = ((SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i)).getNextLoadPositionUs();
+                boolean z2 = nextLoadPositionUs2 != Long.MIN_VALUE && nextLoadPositionUs2 <= loadingInfo.playbackPositionUs;
+                if (nextLoadPositionUs2 == nextLoadPositionUs || z2) {
+                    zContinueLoading |= ((SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i)).continueLoading(loadingInfo);
+                }
+            }
+            z |= zContinueLoading;
+        } while (zContinueLoading);
+        return z;
+    }
+
+    @Override // androidx.media3.exoplayer.source.SequenceableLoader
+    public long getBufferedPositionUs() {
+        long jMin = Long.MAX_VALUE;
+        long jMin2 = Long.MAX_VALUE;
+        for (int i = 0; i < this.loadersWithTrackTypes.size(); i++) {
+            SequenceableLoaderWithTrackTypes sequenceableLoaderWithTrackTypes = (SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i);
+            long bufferedPositionUs = sequenceableLoaderWithTrackTypes.getBufferedPositionUs();
+            if ((sequenceableLoaderWithTrackTypes.getTrackTypes().contains(1) || sequenceableLoaderWithTrackTypes.getTrackTypes().contains(2) || sequenceableLoaderWithTrackTypes.getTrackTypes().contains(4)) && bufferedPositionUs != Long.MIN_VALUE) {
+                jMin = Math.min(jMin, bufferedPositionUs);
+            }
+            if (bufferedPositionUs != Long.MIN_VALUE) {
+                jMin2 = Math.min(jMin2, bufferedPositionUs);
+            }
+        }
+        if (jMin != Long.MAX_VALUE) {
+            this.lastAudioVideoBufferedPositionUs = jMin;
+            return jMin;
+        }
+        if (jMin2 == Long.MAX_VALUE) {
+            return Long.MIN_VALUE;
+        }
+        long j = this.lastAudioVideoBufferedPositionUs;
+        return j != C.TIME_UNSET ? j : jMin2;
+    }
+
+    @Override // androidx.media3.exoplayer.source.SequenceableLoader
+    public long getNextLoadPositionUs() {
+        long jMin = Long.MAX_VALUE;
+        for (int i = 0; i < this.loadersWithTrackTypes.size(); i++) {
+            long nextLoadPositionUs = ((SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i)).getNextLoadPositionUs();
+            if (nextLoadPositionUs != Long.MIN_VALUE) {
+                jMin = Math.min(jMin, nextLoadPositionUs);
+            }
+        }
+        if (jMin == Long.MAX_VALUE) {
+            return Long.MIN_VALUE;
+        }
+        return jMin;
+    }
+
+    @Override // androidx.media3.exoplayer.source.SequenceableLoader
+    public boolean isLoading() {
+        for (int i = 0; i < this.loadersWithTrackTypes.size(); i++) {
+            if (((SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i)).isLoading()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override // androidx.media3.exoplayer.source.SequenceableLoader
+    public void reevaluateBuffer(long j) {
+        for (int i = 0; i < this.loadersWithTrackTypes.size(); i++) {
+            ((SequenceableLoaderWithTrackTypes) this.loadersWithTrackTypes.get(i)).reevaluateBuffer(j);
+        }
+    }
+
+    public CompositeSequenceableLoader(List<? extends SequenceableLoader> list, List<List<Integer>> list2) {
+        O0000ooOOOoO00Oo0O00ooOO0OOOOOO0OOOoO0oO o0000ooOOOoO00Oo0O00ooOO0OOOOOO0OOOoO0oOBuilder = O000O0000OOoo0O00OoO00O0o0OO00OOOOoOoo0O.builder();
+        Assertions.checkArgument(list.size() == list2.size());
+        for (int i = 0; i < list.size(); i++) {
+            o0000ooOOOoO00Oo0O00ooOO0OOOOOO0OOOoO0oOBuilder.O000000o0o00OOO0OoOo00oo0oo0ooo0o0Oo0OOo(new SequenceableLoaderWithTrackTypes(list.get(i), list2.get(i)));
+        }
+        this.loadersWithTrackTypes = o0000ooOOOoO00Oo0O00ooOO0OOOOOO0OOOoO0oOBuilder.O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO();
+        this.lastAudioVideoBufferedPositionUs = C.TIME_UNSET;
+    }
+}

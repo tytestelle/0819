@@ -1,0 +1,3 @@
+rootProject.name = '酷9'
+
+include 'app'

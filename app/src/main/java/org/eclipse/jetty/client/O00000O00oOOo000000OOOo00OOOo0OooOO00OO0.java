@@ -1,0 +1,21 @@
+package org.eclipse.jetty.client;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class O00000O00oOOo000000OOOo00OOOo0OooOO00OO0 extends O000O00oOO0Oo0Oo00oOOo0OOoO00oOOo0ooO0O0.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO {
+
+    /* JADX INFO: renamed from: O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0, reason: collision with root package name */
+    public final /* synthetic */ O000000oooOoo00ooo0O0000000o00O0Oooo0OOO f4238O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0;
+
+    /* JADX INFO: renamed from: O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO, reason: collision with root package name */
+    public final /* synthetic */ O00000OOoOOO00O00o0ooooooooO000ooooO0000 f4239O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO;
+
+    public O00000O00oOOo000000OOOo00OOOo0OooOO00OO0(O00000OOoOOO00O00o0ooooooooO000ooooO0000 o00000OOoOOO00O00o0ooooooooO000ooooO0000, O000000oooOoo00ooo0O0000000o00O0Oooo0OOO o000000oooOoo00ooo0O0000000o00O0Oooo0OOO) {
+        this.f4239O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO = o00000OOoOOO00O00o0ooooooooO000ooooO0000;
+        this.f4238O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0 = o000000oooOoo00ooo0O0000000o00O0Oooo0OOO;
+    }
+
+    @Override // O000O00oOO0Oo0Oo00oOOo0OOoO00oOOo0ooO0O0.O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO
+    public final void O000000O000O00O0oOOo0o0oooO0oO0oOO00OooO() {
+        this.f4239O000000oO0OOo0O00OoooOOoOO0o0o0000O0OOoO.expire(this.f4238O000000o0ooOOOOoO0OO0000OOOoo0oo0OOOOoo0);
+    }
+}
