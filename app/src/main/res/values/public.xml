@@ -123,13 +123,11 @@
     <public type="attr" name="autoSizeMinTextSize" id="0x7f040040" />
     <public type="attr" name="autoSizePresetSizes" id="0x7f040041" />
     <public type="attr" name="autoSizeStepGranularity" id="0x7f040042" />
-    <public type="attr" name="autoTransition" id="0x7f040044" />
     <public type="attr" name="auto_show" id="0x7f040045" />
     <public type="attr" name="background" id="0x7f040046" />
     <public type="attr" name="backgroundSplit" id="0x7f040047" />
     <public type="attr" name="backgroundStacked" id="0x7f040048" />
     <public type="attr" name="backgroundTint" id="0x7f040049" />
-    <public type="attr" name="backgroundTintMode" id="0x7f04004a" />
     <public type="attr" name="barLength" id="0x7f04004b" />
     <public type="attr" name="bar_gravity" id="0x7f04004c" />
     <public type="attr" name="bar_height" id="0x7f04004d" />
@@ -160,7 +158,6 @@
     <public type="attr" name="buttonBarPositiveButtonStyle" id="0x7f040066" />
     <public type="attr" name="buttonBarStyle" id="0x7f040067" />
     <public type="attr" name="buttonCompat" id="0x7f040068" />
-    <public type="attr" name="buttonGravity" id="0x7f040069" />
     <public type="attr" name="buttonIconDimen" id="0x7f04006a" />
     <public type="attr" name="buttonPanelSideLayout" id="0x7f04006b" />
     <public type="attr" name="buttonStyle" id="0x7f04006c" />
@@ -285,7 +282,6 @@
     <public type="attr" name="drawableSize" id="0x7f0400e7" />
     <public type="attr" name="drawableStartCompat" id="0x7f0400e8" />
     <public type="attr" name="drawableTint" id="0x7f0400e9" />
-    <public type="attr" name="drawableTintMode" id="0x7f0400ea" />
     <public type="attr" name="drawableTopCompat" id="0x7f0400eb" />
     <public type="attr" name="drawerArrowStyle" id="0x7f0400ec" />
     <public type="attr" name="dropDownListViewStyle" id="0x7f0400ed" />
@@ -337,7 +333,6 @@
     <public type="attr" name="fontPath" id="0x7f04011b" />
     <public type="attr" name="fontProviderAuthority" id="0x7f04011c" />
     <public type="attr" name="fontProviderCerts" id="0x7f04011d" />
-    <public type="attr" name="fontProviderFetchTimeout" id="0x7f04011f" />
     <public type="attr" name="fontProviderPackage" id="0x7f040120" />
     <public type="attr" name="fontProviderQuery" id="0x7f040121" />
     <public type="attr" name="fontProviderSystemFontFamily" id="0x7f040122" />
@@ -614,14 +609,12 @@
     <public type="attr" name="next_icon" id="0x7f040236" />
     <public type="attr" name="numberOfColumns" id="0x7f040237" />
     <public type="attr" name="numberOfRows" id="0x7f040238" />
-    <public type="attr" name="numericModifiers" id="0x7f040239" />
     <public type="attr" name="onCross" id="0x7f04023a" />
     <public type="attr" name="onHide" id="0x7f04023b" />
     <public type="attr" name="onNegativeCross" id="0x7f04023c" />
     <public type="attr" name="onPositiveCross" id="0x7f04023d" />
     <public type="attr" name="onShow" id="0x7f04023e" />
     <public type="attr" name="onStateTransition" id="0x7f04023f" />
-    <public type="attr" name="onTouchUp" id="0x7f040240" />
     <public type="attr" name="onboardingDescriptionStyle" id="0x7f040241" />
     <public type="attr" name="onboardingHeaderStyle" id="0x7f040242" />
     <public type="attr" name="onboardingLogoStyle" id="0x7f040243" />
@@ -883,7 +876,6 @@
     <public type="attr" name="touch_target_height" id="0x7f040348" />
     <public type="attr" name="track" id="0x7f040349" />
     <public type="attr" name="trackTint" id="0x7f04034a" />
-    <public type="attr" name="trackTintMode" id="0x7f04034b" />
     <public type="attr" name="transformPivotTarget" id="0x7f04034c" />
     <public type="attr" name="transitionDisable" id="0x7f04034d" />
     <public type="attr" name="transitionEasing" id="0x7f04034e" />

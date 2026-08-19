@@ -143,14 +143,7 @@
     </attr>
     <attr name="autoSizeStepGranularity" format="dimension">
     </attr>
-    <attr name="autoTransition">
-        <enum name="none" value="0" />
-        <enum name="jumpToStart" value="1" />
-        <enum name="jumpToEnd" value="2" />
-        <enum name="animateToStart" value="3" />
-        <enum name="animateToEnd" value="4" />
-    </attr>
-    <attr name="auto_show" format="boolean">
+<attr name="auto_show" format="boolean">
     </attr>
     <attr name="background" format="reference">
     </attr>
@@ -160,15 +153,7 @@
     </attr>
     <attr name="backgroundTint" format="color">
     </attr>
-    <attr name="backgroundTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
-    <attr name="barLength" format="dimension">
+<attr name="barLength" format="dimension">
     </attr>
     <attr name="bar_gravity">
         <enum name="center" value="0" />
@@ -236,12 +221,7 @@
     </attr>
     <attr name="buttonCompat" format="reference">
     </attr>
-    <attr name="buttonGravity">
-        <flag name="center_vertical" value="0x10" />
-        <flag name="top" value="0x30" />
-        <flag name="bottom" value="0x50" />
-    </attr>
-    <attr name="buttonIconDimen" format="dimension">
+<attr name="buttonIconDimen" format="dimension">
     </attr>
     <attr name="buttonPanelSideLayout" format="reference">
     </attr>
@@ -519,15 +499,7 @@
     </attr>
     <attr name="drawableTint" format="color">
     </attr>
-    <attr name="drawableTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
-    <attr name="drawableTopCompat" format="reference">
+<attr name="drawableTopCompat" format="reference">
     </attr>
     <attr name="drawerArrowStyle" format="reference">
     </attr>
@@ -661,10 +633,7 @@
     </attr>
     <attr name="fontProviderCerts" format="reference">
     </attr>
-    <attr name="fontProviderFetchTimeout" format="integer">
-        <enum name="forever" value="-1" />
-    </attr>
-    <attr name="fontProviderPackage" format="string">
+<attr name="fontProviderPackage" format="string">
     </attr>
     <attr name="fontProviderQuery" format="string">
     </attr>
@@ -1326,15 +1295,7 @@
     </attr>
     <attr name="numberOfRows" format="integer">
     </attr>
-    <attr name="numericModifiers">
-        <flag name="META" value="0x10000" />
-        <flag name="CTRL" value="0x1000" />
-        <flag name="ALT" value="0x2" />
-        <flag name="SHIFT" value="0x1" />
-        <flag name="SYM" value="0x4" />
-        <flag name="FUNCTION" value="0x8" />
-    </attr>
-    <attr name="onCross" format="string">
+<attr name="onCross" format="string">
     </attr>
     <attr name="onHide" format="boolean">
     </attr>
@@ -1351,17 +1312,7 @@
         <enum name="sharedValueSet" value="4" />
         <enum name="sharedValueUnset" value="5" />
     </attr>
-    <attr name="onTouchUp">
-        <enum name="autoComplete" value="0" />
-        <enum name="autoCompleteToStart" value="1" />
-        <enum name="autoCompleteToEnd" value="2" />
-        <enum name="stop" value="3" />
-        <enum name="decelerate" value="4" />
-        <enum name="decelerateAndComplete" value="5" />
-        <enum name="neverCompleteToStart" value="6" />
-        <enum name="neverCompleteToEnd" value="7" />
-    </attr>
-    <attr name="onboardingDescriptionStyle" format="reference">
+<attr name="onboardingDescriptionStyle" format="reference">
     </attr>
     <attr name="onboardingHeaderStyle" format="reference">
     </attr>
@@ -1939,15 +1890,7 @@
     </attr>
     <attr name="trackTint" format="color">
     </attr>
-    <attr name="trackTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
-    <attr name="transformPivotTarget" format="reference">
+<attr name="transformPivotTarget" format="reference">
     </attr>
     <attr name="transitionDisable" format="boolean">
     </attr>
