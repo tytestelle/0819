@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <attr name="SharedValue" format="integer">
     </attr>
@@ -9,9 +9,6 @@
     <attr name="actionBarItemBackground" format="reference">
     </attr>
     <attr name="actionBarPopupTheme" format="reference">
-    </attr>
-    <attr name="actionBarSize" format="dimension">
-        <enum name="wrap_content" value="0" />
     </attr>
     <attr name="actionBarSplitStyle" format="reference">
     </attr>
@@ -95,14 +92,6 @@
     </attr>
     <attr name="alpha" format="float">
     </attr>
-    <attr name="alphabeticModifiers">
-        <flag name="META" value="0x10000" />
-        <flag name="CTRL" value="0x1000" />
-        <flag name="ALT" value="0x2" />
-        <flag name="SHIFT" value="0x1" />
-        <flag name="SYM" value="0x4" />
-        <flag name="FUNCTION" value="0x8" />
-    </attr>
     <attr name="altSrc" format="reference">
     </attr>
     <attr name="animateCircleAngleTo">
@@ -153,10 +142,6 @@
     <attr name="autoSizePresetSizes" format="reference">
     </attr>
     <attr name="autoSizeStepGranularity" format="dimension">
-    </attr>
-    <attr name="autoSizeTextType">
-        <enum name="none" value="0" />
-        <enum name="uniform" value="1" />
     </attr>
     <attr name="autoTransition">
         <enum name="none" value="0" />
@@ -266,14 +251,6 @@
     </attr>
     <attr name="buttonTint" format="color">
     </attr>
-    <attr name="buttonTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
     <attr name="cardBackground" format="reference|color">
     </attr>
     <attr name="cardForeground" format="reference|color">
@@ -318,14 +295,6 @@
     </attr>
     <attr name="checkMarkTint" format="color">
     </attr>
-    <attr name="checkMarkTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
     <attr name="checkboxStyle" format="reference">
     </attr>
     <attr name="checkedTextViewStyle" format="reference">
@@ -343,13 +312,6 @@
     <attr name="circularflow_viewCenter" format="reference">
     </attr>
     <attr name="clearsTag" format="reference">
-    </attr>
-    <attr name="clickAction">
-        <flag name="toggle" value="0x11" />
-        <flag name="transitionToEnd" value="0x1" />
-        <flag name="transitionToStart" value="0x10" />
-        <flag name="jumpToEnd" value="0x100" />
-        <flag name="jumpToStart" value="0x1000" />
     </attr>
     <attr name="closeIcon" format="reference">
     </attr>
@@ -506,15 +468,6 @@
     <attr name="dialogPreferredPadding" format="dimension">
     </attr>
     <attr name="dialogTheme" format="reference">
-    </attr>
-    <attr name="displayOptions">
-        <flag name="none" value="0" />
-        <flag name="useLogo" value="0x1" />
-        <flag name="showHome" value="0x2" />
-        <flag name="homeAsUp" value="0x4" />
-        <flag name="showTitle" value="0x8" />
-        <flag name="showCustom" value="0x10" />
-        <flag name="disableHome" value="0x20" />
     </attr>
     <attr name="divider" format="reference">
     </attr>
@@ -708,10 +661,6 @@
     </attr>
     <attr name="fontProviderCerts" format="reference">
     </attr>
-    <attr name="fontProviderFetchStrategy">
-        <enum name="blocking" value="0" />
-        <enum name="async" value="1" />
-    </attr>
     <attr name="fontProviderFetchTimeout" format="integer">
         <enum name="forever" value="-1" />
     </attr>
@@ -720,10 +669,6 @@
     <attr name="fontProviderQuery" format="string">
     </attr>
     <attr name="fontProviderSystemFontFamily" format="string">
-    </attr>
-    <attr name="fontStyle">
-        <enum name="normal" value="0" />
-        <enum name="italic" value="1" />
     </attr>
     <attr name="fontVariationSettings" format="string">
     </attr>
@@ -1025,11 +970,6 @@
     </attr>
     <attr name="keep_content_on_player_reset" format="boolean">
     </attr>
-    <attr name="keyPositionType">
-        <enum name="deltaRelative" value="0" />
-        <enum name="pathRelative" value="1" />
-        <enum name="parentRelative" value="2" />
-    </attr>
     <attr name="lStar" format="float">
     </attr>
     <attr name="lastBaselineToBottomHeight" format="dimension">
@@ -1328,12 +1268,6 @@
     </attr>
     <attr name="mock_showLabel" format="boolean">
     </attr>
-    <attr name="motionDebug">
-        <enum name="NO_DEBUG" value="0" />
-        <enum name="SHOW_PROGRESS" value="1" />
-        <enum name="SHOW_PATH" value="2" />
-        <enum name="SHOW_ALL" value="3" />
-    </attr>
     <attr name="motionEffect_alpha" format="float">
     </attr>
     <attr name="motionEffect_end" format="integer">
@@ -1383,12 +1317,6 @@
     <attr name="navigationContentDescription" format="string">
     </attr>
     <attr name="navigationIcon" format="reference">
-    </attr>
-    <attr name="nestedScrollFlags">
-        <flag name="none" value="0" />
-        <flag name="disablePostScroll" value="1" />
-        <flag name="disableScroll" value="2" />
-        <flag name="supportScrollUp" value="4" />
     </attr>
     <attr name="nestedScrollViewStyle" format="reference">
     </attr>
@@ -1760,12 +1688,6 @@
         <flag name="withText" value="4" />
         <flag name="collapseActionView" value="8" />
     </attr>
-    <attr name="showDividers">
-        <flag name="none" value="0" />
-        <flag name="beginning" value="1" />
-        <flag name="middle" value="2" />
-        <flag name="end" value="4" />
-    </attr>
     <attr name="showPaths" format="boolean">
     </attr>
     <attr name="showText" format="boolean">
@@ -1882,12 +1804,6 @@
     </attr>
     <attr name="telltales_tailScale" format="float">
     </attr>
-    <attr name="telltales_velocityMode">
-        <enum name="layout" value="0" />
-        <enum name="postLayout" value="1" />
-        <enum name="staticPostLayout" value="2" />
-        <enum name="staticLayout" value="3" />
-    </attr>
     <attr name="textAllCaps" format="reference|boolean">
     </attr>
     <attr name="textAppearanceLargePopupMenu" format="reference">
@@ -1951,14 +1867,6 @@
     <attr name="thumbTextPadding" format="dimension">
     </attr>
     <attr name="thumbTint" format="color">
-    </attr>
-    <attr name="thumbTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
     </attr>
     <attr name="thumb_down" format="reference">
     </attr>

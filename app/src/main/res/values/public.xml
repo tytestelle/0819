@@ -63,7 +63,6 @@
     <public type="attr" name="actionBarDivider" id="0x7f040002" />
     <public type="attr" name="actionBarItemBackground" id="0x7f040003" />
     <public type="attr" name="actionBarPopupTheme" id="0x7f040004" />
-    <public type="attr" name="actionBarSize" id="0x7f040005" />
     <public type="attr" name="actionBarSplitStyle" id="0x7f040006" />
     <public type="attr" name="actionBarStyle" id="0x7f040007" />
     <public type="attr" name="actionBarTabBarStyle" id="0x7f040008" />
@@ -105,7 +104,6 @@
     <public type="attr" name="alertDialogTheme" id="0x7f04002c" />
     <public type="attr" name="allowStacking" id="0x7f04002d" />
     <public type="attr" name="alpha" id="0x7f04002e" />
-    <public type="attr" name="alphabeticModifiers" id="0x7f04002f" />
     <public type="attr" name="altSrc" id="0x7f040030" />
     <public type="attr" name="animateCircleAngleTo" id="0x7f040031" />
     <public type="attr" name="animateRelativeTo" id="0x7f040032" />
@@ -125,7 +123,6 @@
     <public type="attr" name="autoSizeMinTextSize" id="0x7f040040" />
     <public type="attr" name="autoSizePresetSizes" id="0x7f040041" />
     <public type="attr" name="autoSizeStepGranularity" id="0x7f040042" />
-    <public type="attr" name="autoSizeTextType" id="0x7f040043" />
     <public type="attr" name="autoTransition" id="0x7f040044" />
     <public type="attr" name="auto_show" id="0x7f040045" />
     <public type="attr" name="background" id="0x7f040046" />
@@ -169,7 +166,6 @@
     <public type="attr" name="buttonStyle" id="0x7f04006c" />
     <public type="attr" name="buttonStyleSmall" id="0x7f04006d" />
     <public type="attr" name="buttonTint" id="0x7f04006e" />
-    <public type="attr" name="buttonTintMode" id="0x7f04006f" />
     <public type="attr" name="cardBackground" id="0x7f040070" />
     <public type="attr" name="cardForeground" id="0x7f040071" />
     <public type="attr" name="cardType" id="0x7f040072" />
@@ -188,7 +184,6 @@
     <public type="attr" name="changeStep" id="0x7f04007f" />
     <public type="attr" name="checkMarkCompat" id="0x7f040080" />
     <public type="attr" name="checkMarkTint" id="0x7f040081" />
-    <public type="attr" name="checkMarkTintMode" id="0x7f040082" />
     <public type="attr" name="checkboxStyle" id="0x7f040083" />
     <public type="attr" name="checkedTextViewStyle" id="0x7f040084" />
     <public type="attr" name="circleRadius" id="0x7f040085" />
@@ -198,7 +193,6 @@
     <public type="attr" name="circularflow_radiusInDP" id="0x7f040089" />
     <public type="attr" name="circularflow_viewCenter" id="0x7f04008a" />
     <public type="attr" name="clearsTag" id="0x7f04008b" />
-    <public type="attr" name="clickAction" id="0x7f04008c" />
     <public type="attr" name="closeIcon" id="0x7f04008d" />
     <public type="attr" name="closeItemLayout" id="0x7f04008e" />
     <public type="attr" name="closed_captioning" id="0x7f04008f" />
@@ -273,7 +267,6 @@
     <public type="attr" name="dialogCornerRadius" id="0x7f0400d4" />
     <public type="attr" name="dialogPreferredPadding" id="0x7f0400d5" />
     <public type="attr" name="dialogTheme" id="0x7f0400d6" />
-    <public type="attr" name="displayOptions" id="0x7f0400d7" />
     <public type="attr" name="divider" id="0x7f0400d8" />
     <public type="attr" name="dividerHorizontal" id="0x7f0400d9" />
     <public type="attr" name="dividerPadding" id="0x7f0400da" />
@@ -344,12 +337,10 @@
     <public type="attr" name="fontPath" id="0x7f04011b" />
     <public type="attr" name="fontProviderAuthority" id="0x7f04011c" />
     <public type="attr" name="fontProviderCerts" id="0x7f04011d" />
-    <public type="attr" name="fontProviderFetchStrategy" id="0x7f04011e" />
     <public type="attr" name="fontProviderFetchTimeout" id="0x7f04011f" />
     <public type="attr" name="fontProviderPackage" id="0x7f040120" />
     <public type="attr" name="fontProviderQuery" id="0x7f040121" />
     <public type="attr" name="fontProviderSystemFontFamily" id="0x7f040122" />
-    <public type="attr" name="fontStyle" id="0x7f040123" />
     <public type="attr" name="fontVariationSettings" id="0x7f040124" />
     <public type="attr" name="fontWeight" id="0x7f040125" />
     <public type="attr" name="framePosition" id="0x7f040126" />
@@ -488,7 +479,6 @@
     <public type="attr" name="itemPadding" id="0x7f0401ab" />
     <public type="attr" name="itemsVerticalGridStyle" id="0x7f0401ac" />
     <public type="attr" name="keep_content_on_player_reset" id="0x7f0401ad" />
-    <public type="attr" name="keyPositionType" id="0x7f0401ae" />
     <public type="attr" name="lStar" id="0x7f0401af" />
     <public type="attr" name="lastBaselineToBottomHeight" id="0x7f0401b0" />
     <public type="attr" name="layout" id="0x7f0401b1" />
@@ -601,7 +591,6 @@
     <public type="attr" name="mock_labelColor" id="0x7f04021c" />
     <public type="attr" name="mock_showDiagonals" id="0x7f04021d" />
     <public type="attr" name="mock_showLabel" id="0x7f04021e" />
-    <public type="attr" name="motionDebug" id="0x7f04021f" />
     <public type="attr" name="motionEffect_alpha" id="0x7f040220" />
     <public type="attr" name="motionEffect_end" id="0x7f040221" />
     <public type="attr" name="motionEffect_move" id="0x7f040222" />
@@ -621,7 +610,6 @@
     <public type="attr" name="multiChoiceItemLayout" id="0x7f040230" />
     <public type="attr" name="navigationContentDescription" id="0x7f040231" />
     <public type="attr" name="navigationIcon" id="0x7f040232" />
-    <public type="attr" name="nestedScrollFlags" id="0x7f040234" />
     <public type="attr" name="nestedScrollViewStyle" id="0x7f040235" />
     <public type="attr" name="next_icon" id="0x7f040236" />
     <public type="attr" name="numberOfColumns" id="0x7f040237" />
@@ -780,7 +768,6 @@
     <public type="attr" name="setsTag" id="0x7f0402d0" />
     <public type="attr" name="shortcutMatchRequired" id="0x7f0402d1" />
     <public type="attr" name="showAsAction" id="0x7f0402d2" />
-    <public type="attr" name="showDividers" id="0x7f0402d3" />
     <public type="attr" name="showPaths" id="0x7f0402d4" />
     <public type="attr" name="showText" id="0x7f0402d5" />
     <public type="attr" name="showTitle" id="0x7f0402d6" />
@@ -833,7 +820,6 @@
     <public type="attr" name="targetId" id="0x7f040305" />
     <public type="attr" name="telltales_tailColor" id="0x7f040306" />
     <public type="attr" name="telltales_tailScale" id="0x7f040307" />
-    <public type="attr" name="telltales_velocityMode" id="0x7f040308" />
     <public type="attr" name="textAllCaps" id="0x7f040309" />
     <public type="attr" name="textAppearanceLargePopupMenu" id="0x7f04030a" />
     <public type="attr" name="textAppearanceListItem" id="0x7f04030b" />
@@ -865,7 +851,6 @@
     <public type="attr" name="thickness" id="0x7f040325" />
     <public type="attr" name="thumbTextPadding" id="0x7f040326" />
     <public type="attr" name="thumbTint" id="0x7f040327" />
-    <public type="attr" name="thumbTintMode" id="0x7f040328" />
     <public type="attr" name="thumb_down" id="0x7f040329" />
     <public type="attr" name="thumb_down_outline" id="0x7f04032a" />
     <public type="attr" name="thumb_up" id="0x7f04032b" />
