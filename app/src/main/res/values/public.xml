@@ -621,7 +621,6 @@
     <public type="attr" name="multiChoiceItemLayout" id="0x7f040230" />
     <public type="attr" name="navigationContentDescription" id="0x7f040231" />
     <public type="attr" name="navigationIcon" id="0x7f040232" />
-    <public type="attr" name="navigationMode" id="0x7f040233" />
     <public type="attr" name="nestedScrollFlags" id="0x7f040234" />
     <public type="attr" name="nestedScrollViewStyle" id="0x7f040235" />
     <public type="attr" name="next_icon" id="0x7f040236" />
@@ -873,12 +872,10 @@
     <public type="attr" name="thumb_up_outline" id="0x7f04032c" />
     <public type="attr" name="tickMark" id="0x7f04032d" />
     <public type="attr" name="tickMarkTint" id="0x7f04032e" />
-    <public type="attr" name="tickMarkTintMode" id="0x7f04032f" />
     <public type="attr" name="timePickerStyle" id="0x7f040330" />
     <public type="attr" name="time_bar_min_update_interval" id="0x7f040331" />
     <public type="attr" name="time_bar_scrubbing_enabled" id="0x7f040332" />
     <public type="attr" name="tint" id="0x7f040333" />
-    <public type="attr" name="tintMode" id="0x7f040334" />
     <public type="attr" name="title" id="0x7f040335" />
     <public type="attr" name="titleMargin" id="0x7f040336" />
     <public type="attr" name="titleMarginBottom" id="0x7f040337" />

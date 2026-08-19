@@ -1384,11 +1384,6 @@
     </attr>
     <attr name="navigationIcon" format="reference">
     </attr>
-    <attr name="navigationMode">
-        <enum name="normal" value="0" />
-        <enum name="listMode" value="1" />
-        <enum name="tabMode" value="2" />
-    </attr>
     <attr name="nestedScrollFlags">
         <flag name="none" value="0" />
         <flag name="disablePostScroll" value="1" />
@@ -1977,14 +1972,6 @@
     </attr>
     <attr name="tickMarkTint" format="color">
     </attr>
-    <attr name="tickMarkTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
     <attr name="timePickerStyle" format="reference">
     </attr>
     <attr name="time_bar_min_update_interval" format="integer">
@@ -1992,14 +1979,6 @@
     <attr name="time_bar_scrubbing_enabled" format="boolean">
     </attr>
     <attr name="tint" format="color">
-    </attr>
-    <attr name="tintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
     </attr>
     <attr name="title" format="string">
     </attr>
