@@ -2,4 +2,5 @@
 <resources>
     <attr name="SharedValue" format="integer"/>
     <attr name="SharedValueId" format="reference"/>
+    <attr name="color_theme" format="color"/>
 </resources>
