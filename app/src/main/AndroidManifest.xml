@@ -4,7 +4,6 @@
     android:versionName="2.0.1_20260602_2030"
     android:compileSdkVersion="35"
     android:compileSdkVersionCodename="15"
-    package="com.player.ku9py"
     platformBuildVersionCode="35"
     platformBuildVersionName="15">
     <uses-sdk
