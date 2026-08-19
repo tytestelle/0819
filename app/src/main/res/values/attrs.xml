@@ -785,14 +785,6 @@
     </attr>
     <attr name="iconTint" format="color">
     </attr>
-    <attr name="iconTintMode">
-        <enum name="src_over" value="3" />
-        <enum name="src_in" value="5" />
-        <enum name="src_atop" value="9" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="add" value="16" />
-    </attr>
     <attr name="iconifiedByDefault" format="boolean">
     </attr>
     <attr name="ifTagNotSet" format="reference">
@@ -1883,12 +1875,6 @@
         <enum name="accelerate" value="1" />
         <enum name="decelerate" value="2" />
         <enum name="linear" value="3" />
-    </attr>
-    <attr name="transitionFlags">
-        <flag name="none" value="0" />
-        <flag name="beginOnFirstDraw" value="1" />
-        <flag name="disableIntraAutoTransition" value="2" />
-        <flag name="onInterceptTouchReturnSwipe" value="4" />
     </attr>
     <attr name="transitionPathRotate" format="float">
     </attr>

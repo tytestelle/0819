@@ -409,7 +409,6 @@
     <public type="attr" name="horizontalSpacingWithMarginsTV" id="0x7f04016a" />
     <public type="attr" name="icon" id="0x7f04016b" />
     <public type="attr" name="iconTint" id="0x7f04016c" />
-    <public type="attr" name="iconTintMode" id="0x7f04016d" />
     <public type="attr" name="iconifiedByDefault" id="0x7f04016e" />
     <public type="attr" name="ifTagNotSet" id="0x7f04016f" />
     <public type="attr" name="ifTagSet" id="0x7f040170" />
@@ -877,7 +876,6 @@
     <public type="attr" name="transformPivotTarget" id="0x7f04034c" />
     <public type="attr" name="transitionDisable" id="0x7f04034d" />
     <public type="attr" name="transitionEasing" id="0x7f04034e" />
-    <public type="attr" name="transitionFlags" id="0x7f04034f" />
     <public type="attr" name="transitionPathRotate" id="0x7f040350" />
     <public type="attr" name="triggerId" id="0x7f040351" />
     <public type="attr" name="triggerReceiver" id="0x7f040352" />
