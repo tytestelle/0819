@@ -1,5 +1,14 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="SharedValue" format="integer"/>
-    <attr name="SharedValueId" format="reference"/>
+    <attr name="color_theme" format="color"/>
+    <attr name="bar_gravity" format="enum">
+        <enum name="top" value="0"/>
+        <enum name="bottom" value="1"/>
+    </attr>
+    <attr name="bar_height" format="dimension"/>
+    <attr name="scrubber_dragged_size" format="dimension"/>
+    <attr name="scrubber_enabled_size" format="dimension"/>
+    <attr name="scrubber_disabled_size" format="dimension"/>
+    <attr name="scrubber_color" format="color"/>
+    <attr name="scrubber_drawable" format="reference"/>
 </resources>

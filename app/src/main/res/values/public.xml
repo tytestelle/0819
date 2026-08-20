@@ -1000,7 +1000,6 @@
     <public type="color" name="color_dialog_drawable_black_85" id="0x7f060053" />
     <public type="color" name="color_dialog_drawable_black_90" id="0x7f060054" />
     <public type="color" name="color_dialog_drawable_black_95" id="0x7f060055" />
-    <public type="color" name="color_theme" id="0x7f060056" />
     <public type="color" name="error_color_material_dark" id="0x7f06005e" />
     <public type="color" name="error_color_material_light" id="0x7f06005f" />
     <public type="color" name="exo_black_opacity_60" id="0x7f060060" />

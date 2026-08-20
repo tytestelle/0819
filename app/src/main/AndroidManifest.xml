@@ -6,7 +6,10 @@
     android:compileSdkVersionCodename="15"
     platformBuildVersionCode="35"
     platformBuildVersionName="15">
-<uses-feature
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29"/>
+    <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false"/>
     <uses-feature
@@ -41,6 +44,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:banner="@drawable/app_banner"
+        android:extractNativeLibs="true"
         android:usesCleartextTraffic="true"
         android:resizeableActivity="true"
         android:networkSecurityConfig="@xml/network_security_config"
