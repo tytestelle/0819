@@ -349,7 +349,7 @@
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
         <item name="android:listDivider">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowSoftInputMode">0x20</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
@@ -380,7 +380,7 @@
         <item name="titleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:gravity">0x10</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
         <item name="background">@null</item>
@@ -430,7 +430,7 @@
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
     </style>
     <style name="Base.Widget.AppCompat.ActivityChooserView" parent="">
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">0x11</item>
         <item name="android:background">@drawable/abc_ab_share_pack_mtrl_alpha</item>
         <item name="divider">?attr/dividerVertical</item>
         <item name="dividerPadding">6dp</item>
@@ -632,10 +632,10 @@
         <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:layout_marginLeft">@dimen/exo_icon_horizontal_margin</item>
         <item name="android:layout_marginRight">@dimen/exo_icon_horizontal_margin</item>
-        <item name="android:scaleType">fitCenter</item>
+        <item name="android:scaleType">1</item>
     </style>
     <style name="ExoStyledControls.Button.Bottom" parent="@style/ExoStyledControls.Button">
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">0x1</item>
         <item name="android:paddingLeft">@dimen/exo_small_icon_padding_horizontal</item>
         <item name="android:paddingTop">@dimen/exo_small_icon_padding_vertical</item>
         <item name="android:paddingRight">@dimen/exo_small_icon_padding_horizontal</item>
@@ -684,9 +684,9 @@
     </style>
     <style name="ExoStyledControls.Button.Center.FfwdWithAmount" parent="@style/ExoStyledControls.Button.Center">
         <item name="android:textSize">@dimen/exo_icon_text_size</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">0x1</item>
         <item name="android:textColor">@color/exo_white</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">0x51</item>
         <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingRight">0dp</item>
         <item name="android:paddingBottom">@dimen/exo_icon_padding_bottom</item>
@@ -711,9 +711,9 @@
     </style>
     <style name="ExoStyledControls.Button.Center.RewWithAmount" parent="@style/ExoStyledControls.Button.Center">
         <item name="android:textSize">@dimen/exo_icon_text_size</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">0x1</item>
         <item name="android:textColor">@color/exo_white</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">0x51</item>
         <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingRight">0dp</item>
         <item name="android:paddingBottom">@dimen/exo_icon_padding_bottom</item>
@@ -731,13 +731,13 @@
     </style>
     <style name="ExoStyledControls.TimeText" parent="@style/ExoStyledControls">
         <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_gravity">0x10</item>
         <item name="android:paddingLeft">4dp</item>
         <item name="android:paddingRight">4dp</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
     </style>
     <style name="ExoStyledControls.TimeText.Duration" parent="@style/ExoStyledControls.TimeText">
         <item name="android:textColor">@color/exo_white_opacity_70</item>
@@ -778,7 +778,7 @@
         <item name="android:textAlignment">5</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="@android:style/Widget">
-        <item name="android:layout_gravity">start|top</item>
+        <item name="android:layout_gravity">0x800013</item>
         <item name="android:paddingEnd">8dp</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="@android:style/Widget">
@@ -1084,7 +1084,7 @@
         <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
         <item name="android:progressDrawable">@drawable/play_progress_horizontal</item>
         <item name="android:indeterminateDuration">3500</item>
-        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateBehavior">1</item>
         <item name="android:minWidth">1dp</item>
     </style>
     <style name="video_vertical_progressBar" parent="">
@@ -1093,7 +1093,7 @@
         <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
         <item name="android:progressDrawable">@drawable/play_progress_vertical</item>
         <item name="android:indeterminateDuration">3500</item>
-        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateBehavior">1</item>
         <item name="android:minWidth">1dp</item>
     </style>
 </resources>
